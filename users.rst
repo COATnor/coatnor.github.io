@@ -1,9 +1,8 @@
 .. _users:
 
-Users of the Data Portal
+Users
 ==================================
 
-The Data Portal is designed to let anyone access and visualize the public datasets.
 COAT researchers and data managers can login to the Data Portal using their FEIDE account.
 There are different roles which can be assigned to users
 

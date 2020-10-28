@@ -12,3 +12,5 @@ in the frame of the COAT project
 
    about
    users
+   standards
+   data
