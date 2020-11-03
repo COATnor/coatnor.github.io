@@ -3,26 +3,59 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: intro_index.rst
+===============================================
+COAT Data Management
+===============================================
 
-COAT Data Portal - about
+The `COAT Data Portal <https://data.coat.no>`_ is designed to share data collected and created
+in the frame of the COAT project
+
+.. image:: _images/dataportal_homepage_screenshot.png
+
+.. toctree::
+   :maxdepth: 1
+
+
+About
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    about
 
 
-COAT Data Portal - users
+Users
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    users
+
+Preparing data
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+   formatting
+
+Uploading data
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+   data
+
+Adopted standards
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+   standards
 
 Indices and tables
 ==================

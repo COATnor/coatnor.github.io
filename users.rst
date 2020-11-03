@@ -1,6 +1,6 @@
 .. _users:
 
-Users
+User types
 ==================================
 
 COAT researchers and data managers can login to the Data Portal using their FEIDE account.
