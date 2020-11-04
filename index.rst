@@ -41,6 +41,14 @@ Preparing data
 
    formatting
 
+Quick check before upload
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+   check
+
 Uploading data
 ============================================
 
