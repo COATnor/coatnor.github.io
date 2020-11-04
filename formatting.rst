@@ -9,7 +9,7 @@ datasets need to be formatted according to formatting rules defined for the COAT
 For each dataset in the COAT Data Portal there are some mandatory requirements:
 
 - The datasets need to be associated to a **sampling protocol** (added as a link in metadata)
-- The dataset need to include a coordinate file with coordinates of all sampling sites in a standardized format.
+- The dataset need to include a **coordinates file** with coordinates of all sampling sites in a standardized format.
 
 Each dataset can also include optional additional information such as auxiliary or readme files.
 An example of a non-mandatory auxiliary file is a file containing a set of station-level variables measured at each plot/site/transect/quadrat.
@@ -131,7 +131,7 @@ Below is a complete list of monitoring targets (and prefixes).
 |                      | Varanger |          |                                          |
 +----------------------+----------+----------+------------------------------------------+
 
-:ref:`go up to start of the page <formatting>`
+:ref:`go back to top of the page <formatting>`
 
 File naming
 -------------------------------
@@ -182,7 +182,7 @@ column in the data files (see section on Columns names in data files)
 
 **[n_utm33]**: Y coordinate of the plot in UTM zone 33 (WGS84 unless otherwise stated)
 
-:ref:`go up to start of the page <formatting>`
+:ref:`go back to top of the page <formatting>`
 
 Column names in data files
 -------------------------------
@@ -232,6 +232,8 @@ Date formats in data files
 -------------------------------
 
 Dates should always be given as **YYYY-MM-DD** for example **2018-12-31**.
+
+:ref:`go back to top of the page <formatting>`
 
 Locality names in data files
 -------------------------------
