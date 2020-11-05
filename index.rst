@@ -49,6 +49,14 @@ Quick check before upload
 
    check
 
+Uploading a protocol
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+   protocol
+
 Uploading data
 ============================================
 
