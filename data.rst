@@ -3,7 +3,7 @@
 Data upload
 ==================================
 
-Data upload instructions
+Check for protocol
 -------------------------------
 
 Warning: Before uploading a dataset you have to be sure that the related protocol is already in the portal.
@@ -15,25 +15,69 @@ If it's not yet available, follow the instruction for :ref:`protocol upload <pro
     :depth: 2
     :local:
 
-Data Catalog
+Upload a dataset
 -------------------------------
 
-The Data Portal is both a data catalog and a data sharing repository.
-As a catalog it is built following FAIR guidelines
-so that the datasets can be findable, accessible, interoperable and reusable
+* Login with a user with editor role for the module the dataset belong to
+* Go to Datasets and select "Add Dataset" (if not visible, you are not authorized: contact the module leader)
+* The title shouuld be identical to the dataset name
+* The title should follow formatting rules (starting with \V_\ for datasets from Varanger and \S_\ for datasets from Svalbard)
+* Add a short description of the dataset. Here an example i Markdown format:
+* Select an embargo policy. If the dataset doesn't require an embargo, go on with next point.
+If your dataset include data less than 2 years old, you could select an embargo end date.
+Read the detailed instructions on how to manage embargo data and dataset versions :ref:'here<embargo>
+* After filling all metadata, select Next: "Add data"
+* Upload all the data file in the following order, add a filename
+(best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
 
-Data can be searched from the graphical user interface, the portal's API
-or metadata endpoints in different standards and exchange formats
-
-At every dataset corresponds a metadata record and a landing page on the portal.
-A dataset record in the catalog can be pointing to an external resource using a link (URL),
-or include multiple files containing data or additional content as resources associated to the dataset.
 
 .. contents::
     :depth: 2
     :local:
 
-What is a dataset?
+Data files upload order
 -------------------------------
 
-A dataset is
+#. Upload the readme file as a PDF/A. A description can be added, for example:
+"Additional information about the dataset, including a description of the variables included in the dataset"
+#. Upload the auxiliary file/s A description can be added, for example:
+"Auxiliary information about the sampling sites including information about whem the site has been included in the sampling design"
+#. Upload the coordinates file. A description can be added, for example:
+"Coordinates of all sites included in the dataset"
+£. Upload all data files in chronological order (from older to newer)
+
+.. contents::
+    :depth: 2
+    :local:
+
+
+Data files upload order
+-------------------------------
+
+After the upload is completed, the dataset can be set to *'Public'* by selecting **'Manage'** in the
+menu of the dataset and setting the *'Visibility'* metadata element to *'Public'*.
+
+.. contents::
+    :depth: 2
+    :local:
+
+Dataset Versions
+-------------------------------
+
+Datasets already published cannot be removed or modified, because of the FAIR requirement of being permanent and findable as it is by whoever used or cited it.
+whenever a dataset content changes, it is necessary to create a new version of it.
+
+.. contents::
+    :depth: 2
+    :local:
+
+Embargo management
+-------------------------------
+
+Datasets in embargo follow a particular setup, which guarantees avialability of older data contents and protection of more recent ones.
+
+
+.. contents::
+    :depth: 2
+    :local:
+
