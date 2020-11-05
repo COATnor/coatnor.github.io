@@ -20,15 +20,12 @@ Upload a dataset
 
 * Login with a user with editor role for the module the dataset belong to
 * Go to Datasets and select "Add Dataset" (if not visible, you are not authorized: contact the module leader)
-* The title shouuld be identical to the dataset name
+* The title should be identical to the dataset name
 * The title should follow formatting rules (starting with \V_\ for datasets from Varanger and \S_\ for datasets from Svalbard)
 * Add a short description of the dataset. Here an example i Markdown format:
-* Select an embargo policy. If the dataset doesn't require an embargo, go on with next point.
-If your dataset include data less than 2 years old, you could select an embargo end date.
-Read the detailed instructions on how to manage embargo data and dataset versions :ref:'here<embargo>
+* Select an embargo policy. If the dataset doesn't require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions :ref:'here<embargo>
 * After filling all metadata, select Next: "Add data"
-* Upload all the data file in the following order, add a filename
-(best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
+* Upload all the data file in the following order, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
 
 
 .. contents::
@@ -38,13 +35,13 @@ Read the detailed instructions on how to manage embargo data and dataset version
 Data files upload order
 -------------------------------
 
-#. Upload the readme file as a PDF/A. A description can be added, for example:
-"Additional information about the dataset, including a description of the variables included in the dataset"
-#. Upload the auxiliary file/s A description can be added, for example:
-"Auxiliary information about the sampling sites including information about whem the site has been included in the sampling design"
-#. Upload the coordinates file. A description can be added, for example:
-"Coordinates of all sites included in the dataset"
-£. Upload all data files in chronological order (from older to newer)
+#. Upload the readme file as a PDF/A. A description can be added, for example: "Additional information about the dataset, including a description of the variables included in the dataset"
+
+#. Upload the auxiliary file/s A description can be added, for example: "Auxiliary information about the sampling sites including information about whem the site has been included in the sampling design"
+
+#. Upload the coordinates file. A description can be added, for example: "Coordinates of all sites included in the dataset"
+
+#. Upload all data files in chronological order (from older to newer)
 
 .. contents::
     :depth: 2
