@@ -1,6 +1,6 @@
-.. _standards:
+.. _metadata:
 
-Adopting standards
+Editing metadata
 ==================================
 
 Most of COATs data are in tabular format, stored in suitable text file formats (.txt/.csv/.asc).
