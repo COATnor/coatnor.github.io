@@ -20,9 +20,14 @@ Upload a dataset
 
 * Login with a user with editor role for the module the dataset belong to
 * Go to Datasets and select "Add Dataset" (if not visible, you are not authorized: contact the module leader)
+
+.. image:: _images/addataset.png
+    :align: center
+    :width: 92%
+
 * The title should be identical to the dataset name
 * The title should follow formatting rules (starting with \V_\ for datasets from Varanger and \S_\ for datasets from Svalbard)
-* Add a short description of the dataset. Here an example i Markdown format:
+* Add a short description of the dataset. Here an example in Markdown format:
 * Select an embargo policy. If the dataset doesn't require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions :ref:`here <embargo>`
 * After filling all metadata, select Next: "Add data"
 * Upload all the data file in the following order, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
@@ -57,6 +62,14 @@ menu of the dataset and setting the *'Visibility'* metadata element to *'Public'
 .. contents::
     :depth: 2
     :local:
+
+.. image:: _images/manage.png
+
+.. image:: _images/arrow.png
+    :align: center
+
+
+.. image:: _images/visibility.png
 
 Dataset Versions
 -------------------------------

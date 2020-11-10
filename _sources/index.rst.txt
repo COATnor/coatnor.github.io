@@ -34,16 +34,16 @@ a **dataset**:
 * is formatted according to mandatory rules
 
 
-For additional information about DOIs, see `datacite documentation <https://datacite.org/dois.html>`_
+*For additional information about DOIs, see* `datacite documentation <https://datacite.org/dois.html>`_
 
 Types of datasets
 __________________________________________
 
 The COAT Data Portal provide a separate management for 3 types of datasets, each accessed from a different TAB of the portal:
 
-* Collected datasets (input for State Variables)
-* State Variables (Output of the project)
-* Data sampling protocols (describing the study design behind data collection)
+* Collected **datasets** (input for State Variables)
+* **State Variables** (Output of the project)
+* Data sampling **protocols** (describing the study design behind data collection)
 
 .. image:: _images/tabs.png
 
@@ -75,16 +75,20 @@ Uploading datasets
 __________________________________________
 
 When the data files are formatted and ready, the data upload process can start:
-A user authorized to add data to a module can create a new dataset by editing the metadata using a form in the data portal interface,
-then can add all the data files, following a specific order. data files can be added manually using the Graphic Interface, or using the data API.
-More detail in the :ref:`data upload section <data>`
+
+* A user authorized to add data to a module can create a new dataset
+* the user edits the metadata using a form in the data portal interface
+* then can add all the data files, following a specific order.
+* data files can be added manually using the Graphic Interface, or by command line or scripting using the data API.
+
+*More details in the* :ref:`data upload section <data>`
 
 During upload procedures the dataset will be still in private mode. Once the dataset is uploaded it can be published.
 Publishing means creating a DOI for the dataset, and this step means making the dataset permanent,
-with the obligation of being always available for being found and accessed. If any modification needed,
+with the obligation of being always available, findable and accessible. If any modification needed,
 it will be solved by creating a new version of the dataset.
 
-datatasets can additionally be set in embargo mode, to keep private more recent data files.
+datatasets can additionally be set in embargo mode, to keep private the most recent data files (up to 2 years).
 See details in the :ref:`embargo description <embargo>`
 
 About
