@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data formatting &#8212; COAT Data Portal 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick check" href="check.html" />
+    <link rel="prev" title="User types" href="users.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="data-formatting">
+<span id="formatting"></span><h1>Data formatting<a class="headerlink" href="#data-formatting" title="Permalink to this headline">¶</a></h1>
+<p>Before uploading to the COAT Data Portal,
+datasets need to be formatted according to formatting rules defined for the COAT project.</p>
+<p>For each dataset in the COAT Data Portal there are some mandatory requirements:</p>
+<ul class="simple">
+<li><p>The datasets need to be associated to a <strong>sampling protocol</strong> (added as a link in metadata)</p></li>
+<li><p>The dataset need to include a <strong>coordinates file</strong> with coordinates of all sampling sites in a standardized format.</p></li>
+</ul>
+<p>Each dataset can also include optional additional information such as auxiliary or readme files.
+An example of a non-mandatory auxiliary file is a file containing a set of station-level variables measured at each plot/site/transect/quadrat.
+Typically, these variables would be such as terrain characteristics, habitat classes, land cover etc.
+Another example is a file defining the first and the last year when given sampling sites have been included in the study design.
+This is useful when the study design has changed over time.</p>
+<div class="section" id="tabular-data">
+<h2>tabular data<a class="headerlink" href="#tabular-data" title="Permalink to this headline">¶</a></h2>
+<p>Most of COATs data are in tabular format, stored in suitable text file formats (.txt/.csv/.asc).
+We divide tabular data into two types, and a generic format was defined for each of these two types:</p>
+<ul class="simple">
+<li><p><em>Plot-based data:</em> The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contain1-n variables measured on each of these individuals</p></li>
+<li><p><em>Individual-based data:</em> the sampling units are individuals not fixed in space (e.g. animals) and the data contain 1-n variables measured on each of these individuals.</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-a-dataset">
+<h2>What is a dataset?<a class="headerlink" href="#what-is-a-dataset" title="Permalink to this headline">¶</a></h2>
+<p>A dataset in the COAT data portal is a parcel of data, organized as a
+<strong>collection of files</strong> which are all represented by the <strong>same set of metadata</strong>.</p>
+<p>If the collection of files you have at hand cannot be represented by the same set of metadata,
+you should consider splitting them into several collections (i.e.several data sets).</p>
+<p>Each dataset in the portal is allocated a unique identifier (DOI),
+and all search capabilities are on the metadata level of the data sets (see further info below).</p>
+<p>A dataset could typically be X number of files containing measurements of the same variables in X number of years.
+Or Y number of files containing measurements of the same variables in Y number of localities.</p>
+</div>
+<div class="section" id="dataset-naming">
+<h2>Dataset naming<a class="headerlink" href="#dataset-naming" title="Permalink to this headline">¶</a></h2>
+<p>The name of a dataset (e.g. a collection of files, see above) should always
+start with a <strong>standardized prefix</strong> indicating which region (Svalbard, Varanger)
+and which monitoring target they refer to.</p>
+<p>After the prefix the data set owner can define a name that is informative of the content.</p>
+<p>For instance, all data sets that describe the monitoring target rodents
+in Varanger are given the prefix <em>‘V_rodents_’</em> while all data sets that describe
+the monitoring target arctic fox on Svalbard are given the prefix <em>‘S_arcticfox_’</em>.</p>
+<p>A data set from Varanger which describes the monitoring target forest and
+contains data on tree structure could hence be called <em>‘V_forest_treestructure’</em>
+or possibly <em>‘V_forest_treestructure_Polmak’</em> if there is a need to distinguish
+between this data set and another from a different region or design.</p>
+<p>Below is a complete list of monitoring targets (and prefixes).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Target</p></th>
+<th class="head"><p>Locality</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Datasetname_prefix</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Vegetation</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>S_vegetation_/V_vegetation_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ungulates</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>S_ungulates_/V_ungulates_</p></td>
+</tr>
+<tr class="row-even"><td><p>Ptarmigan</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>S_ptarmigan_/V_ptarmigan_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Arctic fox</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>S_arcticfox_/V_arcticfox_</p></td>
+</tr>
+<tr class="row-even"><td><p>Red Fox</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_redfox_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geese</p></td>
+<td><p>Svalbard</p></td>
+<td><p>Biotic</p></td>
+<td><p>S_geese_</p></td>
+</tr>
+<tr class="row-even"><td><p>Rodents</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_rodents_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Insect defoliators</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_insect_defoliators_</p></td>
+</tr>
+<tr class="row-even"><td><p>Insect communities</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_insect_commun_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Specialist predators
+(rodents)</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_rodent_special_predators</p></td>
+</tr>
+<tr class="row-even"><td><p>Specialist predators
+(ptarmigan)</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_ptarmigan_special_predators</p></td>
+</tr>
+<tr class="row-odd"><td><p>Generalist predators</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_general_predators_</p></td>
+</tr>
+<tr class="row-even"><td><p>Bird communities</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_bird_commun_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tall shrub</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_tall_shrub_</p></td>
+</tr>
+<tr class="row-even"><td><p>Meadow</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_meadow_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forest</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_forest_</p></td>
+</tr>
+<tr class="row-even"><td><p>Heath</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_heath_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forest_understorey</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_forest_understorey_</p></td>
+</tr>
+<tr class="row-even"><td><p>Snowbed</p></td>
+<td><p>Varanger</p></td>
+<td><p>Biotic</p></td>
+<td><p>V_snowbed_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Timing of snow melt</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_timing_snowmelt_/V_timing_snowmelt_</p></td>
+</tr>
+<tr class="row-even"><td><p>Snow depth</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>_snowdepth_/V_snowdepth_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Snow structure</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_snowstructure_/V_snowstructure_</p></td>
+</tr>
+<tr class="row-even"><td><p>Ground ice</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_groundice_/V_groundice_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Timing of icing</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_timing_icing_/V_timing_icing_</p></td>
+</tr>
+<tr class="row-even"><td><p>Weather</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_weather_/V_weather_</p></td>
+</tr>
+<tr class="row-odd"><td><p>Energy Balance</p></td>
+<td><p>Svalbard,
+Varanger</p></td>
+<td><p>Climatic</p></td>
+<td><p>S_energy_balance_/V_energy_balance_</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
+</div>
+<div class="section" id="file-naming">
+<h2>File naming<a class="headerlink" href="#file-naming" title="Permalink to this headline">¶</a></h2>
+<p>The naming of the files within a dataset should inform about their content.
+However, there are no fixed naming conventions, and it is up to each data owner
+to ensure that file naming is consistent and informative within each data set.
+For some datasets it might be relevant to include locality names while for others
+it will be more relevant to name the file according to main variable and year.</p>
+<p>The only file where there is a strict naming convention is the mandatory file with plot coordinates.
+This should be named according to the data set name + ‘coordinates’.
+Example: for a dataset named ‘V_forest_treestructure’, the coordinate file should
+be named ‘V_forest_treestructure_coordinates.csv’.</p>
+<p>Special characters: avoid special characters (such as ‘()’,’#’,’&amp;’, ‘{}’, ‘:’, ‘;’, ‘*’) in all file names.</p>
+</div>
+<div class="section" id="coordinate-files">
+<h2>Coordinate files<a class="headerlink" href="#coordinate-files" title="Permalink to this headline">¶</a></h2>
+<p>All plot-based data sets must be accompanied by a file containing plot coordinates.
+The files have standard format to facilitate finding data from the same localities from the data portal.</p>
+<p>Standard coordinates in COAT are decimal degrees and <strong>UTM zone 33</strong>. We provide the latter to facilitate the
+integration with national level map-based data where UTM33 Euref89 is the standard.</p>
+<p>For some datasets there might be uncertainties attached to which datum was used.
+In most COAT relevant cases, any uncertainty as to whether the datum is Euref89 or WGS84 is irrelevant,
+as the difference is in the order of centimetres. However, if there is uncertainty as to whether the datum
+is ED50 or Euref89/WGS84, the difference can be substantial.
+In such cases, the data owner should judge whether this has implications for the use of the data,
+and specify any uncertainties in the Description field of the metadata. For example:</p>
+<p>“Uncertainty related to datum: For the years 2000-present datum is Euref89.
+For the years preceding 2000, datum is suspected to be ED50, but this is uncertain.
+The potential displacement of coordinates due to this uncertainty is in the order of XX meters”.</p>
+<p>The coordinate file should contain the following five columns in the given order:</p>
+<p><strong>[sn_siteID]</strong>: this is the waypoint of the plot. Must be the same name as used in the sn_siteID
+column in the data files (see section on Columns names in data files)</p>
+<p><strong>[e_dd]</strong>: X coordinate of the plot in longitude decimal degrees (WGS84 unless otherwise stated)</p>
+<p><strong>[n_dd]</strong>: Y coordinate of the plot in latitude decimal degrees (WGS84 unless otherwise stated)</p>
+<p><strong>[e_utm33]</strong>: X coordinate of the plot in UTM zone 33 (WGS84 unless otherwise stated)</p>
+<p><strong>[n_utm33]</strong>: Y coordinate of the plot in UTM zone 33 (WGS84 unless otherwise stated)</p>
+<p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
+</div>
+<div class="section" id="column-names-in-data-files">
+<h2>Column names in data files<a class="headerlink" href="#column-names-in-data-files" title="Permalink to this headline">¶</a></h2>
+<p>As a general rule-of-thumb simple tables in COAT should be formatted in a <strong>long format</strong>,
+rather than in a wide format. This makes it easier to combine and plot data in R and facilitates
+the use of standardized column names.</p>
+<p>For instance a dataset with abundances measured on X number
+of species should have one column indicating species and one column indicating abundance,
+instead of X columns indicating abundance for species 1..X.</p>
+<p><a class="reference external" href="https://www.theanalysisfactor.com/wide-and-long-data/">https://www.theanalysisfactor.com/wide-and-long-data/</a></p>
+<p><a class="reference external" href="http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/">http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/</a></p>
+<img alt="_images/long_table.png" src="_images/long_table.png" />
+<p>Standardized column names have been defined to describe the spatial sampling hierarchy,
+the temporal sampling and the most commonly used value columns.</p>
+<p>All column names include a prefix:
+* sn_(for spatial nested variables)
+* sc_(for spatial crossed variables)
+* t_(for temporal variables)
+* v_(for variables containing other observations)</p>
+<p>A complete list of these and a definition for each can be found at
+Box/COAT/Data Management/Datatypes/Simple tables/Generic format data tables/Simple tables column definitions.xlsx(internal users only).
+The file also contains information on which standard columns should be included in all datasets.</p>
+</div>
+<div class="section" id="spelling-and-general-text-formatting-in-data-files">
+<h2>Spelling and general text formatting in data files<a class="headerlink" href="#spelling-and-general-text-formatting-in-data-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Capital letters: used only for NA, not for any other purpose</p></li>
+<li><p>Scandinavian letters: replace Scandinavian letters ø, æ, å with ‘o’, ‘ae’, ‘aa’.</p></li>
+<li><p>Special characters: avoid special characters (such as ‘()’,’#’,’&amp;’, ‘{}’, ‘:’, ‘;’, ‘*’) in all text columns.</p></li>
+<li><p>Separating words in ‘notes’/’comments’ columns: use space, underscore or comma.</p></li>
+</ul>
+</div>
+<div class="section" id="missing-data-in-files">
+<h2>Missing data in files<a class="headerlink" href="#missing-data-in-files" title="Permalink to this headline">¶</a></h2>
+<p>Always indicate missing data, also in text columns, by <strong>NA</strong> (capital letters only).
+All observations that have no comments, should have value <strong>“NA”</strong> in the comment column.</p>
+</div>
+<div class="section" id="date-formats-in-data-files">
+<h2>Date formats in data files<a class="headerlink" href="#date-formats-in-data-files" title="Permalink to this headline">¶</a></h2>
+<p>Dates should always be given as <strong>YYYY-MM-DD</strong> for example <strong>2018-12-31</strong>.</p>
+<p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
+</div>
+<div class="section" id="locality-names-in-data-files">
+<h2>Locality names in data files<a class="headerlink" href="#locality-names-in-data-files" title="Permalink to this headline">¶</a></h2>
+<p>All locality names in files should conform to the standard lists of locality names
+found in Box/COAT/Data Management/Taxonomy/Locality/Locality taxonomy COAT.xlsx (internal users only).
+The list defines the spelling of all place names found at the top-four levels of the spatial hierarchy:</p>
+<p><strong>sn_region &gt; sn_subregion &gt; sn_locality &gt; sn_section</strong></p>
+<p>Note that the names confirm to the general rules of
+text formatting (no capital letters, no Scandinavian letters etc). Anyone in need ofthe proper spelling
+(for instance for plotting purposes) can consult the sheet “correct spelling” in the same file.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">COAT Data Portal</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the Data Portal</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="users.html">User types</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data formatting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tabular-data">tabular data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-dataset">What is a dataset?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-naming">Dataset naming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-naming">File naming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-files">Coordinate files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#column-names-in-data-files">Column names in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spelling-and-general-text-formatting-in-data-files">Spelling and general text formatting in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#missing-data-in-files">Missing data in files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#date-formats-in-data-files">Date formats in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locality-names-in-data-files">Locality names in data files</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="check.html">Quick check</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="protocol.html">Upload a protocol</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Editing metadata</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="users.html" title="previous chapter">User types</a></li>
+      <li>Next: <a href="check.html" title="next chapter">Quick check</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Matteo De Stefano.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/formatting.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

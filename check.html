@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick check &#8212; COAT Data Portal 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Upload a protocol" href="protocol.html" />
+    <link rel="prev" title="Data formatting" href="formatting.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="quick-check">
+<span id="check"></span><h1>Quick check<a class="headerlink" href="#quick-check" title="Permalink to this headline">¶</a></h1>
+<p>Before uploading a dataset to the COAT Data Portal, we suggest to perform a quick check
+of compliance to mandatory formatting requirements.</p>
+<p>This section aims at providing a synthetic checklist to help during datasets upload operations.
+For a full detailed description of the formatting rules please refer to the <a class="reference internal" href="formatting.html#formatting"><span class="std std-ref">data formatting section</span></a></p>
+<p>The data formatting rules are also included in the Data Management Plan of the COAT project.</p>
+<div class="section" id="dataset-requirements">
+<h2>1. Dataset requirements<a class="headerlink" href="#dataset-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A coordinates file is mandatory. Se below for more details</p></li>
+<li><p>A Sampling Protocol related to the dataset needs to be already available in the portal</p></li>
+</ul>
+</div>
+<div class="section" id="data-files">
+<h2>2. Data files<a class="headerlink" href="#data-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>All tabular files formatted as “;”-separated txt files</p></li>
+<li><p>All column names should start with <strong>sn_</strong>, <strong>sc_</strong>, <strong>t_</strong> or <strong>v_</strong></p></li>
+<li><p>No empty cells - use NA</p></li>
+<li><p>Only lower case (except NA)</p></li>
+<li><p>Correct spelling of spatial names (according to COAT vocabulary for localities)</p></li>
+<li><p>Date format: yyy-mm-dd</p></li>
+</ul>
+</div>
+<div class="section" id="sampling-protocol">
+<h2>3. Sampling protocol<a class="headerlink" href="#sampling-protocol" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The protocol should be formatted using the template for COAT protocols available on BOX</p></li>
+<li><p>A protocol need to be added to the portal before the datasets referring to it</p></li>
+<li><p>A protocol will be saved as a PDF/A and the name should start with “protocol_&quot;</p></li>
+<li><p>A protocol is a special type of dataset in the data portal, and will be added with a similar procedure,
+with slightly different metadata</p></li>
+<li><p>An example of a protocol can be found on BOX</p></li>
+</ul>
+</div>
+<div class="section" id="coordinates-file">
+<h2>4. Coordinates file<a class="headerlink" href="#coordinates-file" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Should be a txt file</p></li>
+<li><p>Same formatting requirements as for data files</p></li>
+<li><p>The file should include the coordinates of all dataset’s sampling sites</p></li>
+<li><p>Coordinates need to be provided both as geographical (decimal degrees) and UTM33 (easting and northing in meters)</p></li>
+<li><p>The file should include the following columns: ‘sn_site’, ‘e_dd’, ‘n_dd’, ‘e_utm33’, ‘n_utm33’</p></li>
+<li><p>Find an example in BOX</p></li>
+</ul>
+</div>
+<div class="section" id="auxiliary-files">
+<h2>5. Auxiliary files<a class="headerlink" href="#auxiliary-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Same formatting requirements</p></li>
+<li><p>The file can include further information about the sites included in the study design</p></li>
+<li><p>For example the years when a site has been included in the study design</p></li>
+<li><p>Another example: old site names</p></li>
+<li><p>Example on BOX</p></li>
+</ul>
+</div>
+<div class="section" id="readme-file">
+<h2>6. Readme file<a class="headerlink" href="#readme-file" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The file should be saved as PDF/A</p></li>
+<li><p>No special formatting rules</p></li>
+<li><p>The file can include other necessary information about the dataset,
+for example a description of the variables included in the dataset, or changes in the protocol</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">COAT Data Portal</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the Data Portal</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="users.html">User types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Data formatting</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick check</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-requirements">1. Dataset requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-files">2. Data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sampling-protocol">3. Sampling protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinates-file">4. Coordinates file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#auxiliary-files">5. Auxiliary files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#readme-file">6. Readme file</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="protocol.html">Upload a protocol</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Editing metadata</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="formatting.html" title="previous chapter">Data formatting</a></li>
+      <li>Next: <a href="protocol.html" title="next chapter">Upload a protocol</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Matteo De Stefano.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/check.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

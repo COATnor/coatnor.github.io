@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COAT Data Management &#8212; COAT Data Portal 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About the Data Portal" href="about.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="coat-data-management">
+<h1>COAT Data Management<a class="headerlink" href="#coat-data-management" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://data.coat.no">COAT Data Portal</a> is designed to share data collected and created following
+FAIR data principles in the frame of the COAT project. For more information about the COAT project and FAIR data principles
+refer to the <a class="reference internal" href="about.html#about"><span class="std std-ref">about section</span></a></p>
+<img alt="_images/dataportal_homepage_screenshot.png" src="_images/dataportal_homepage_screenshot.png" />
+<div class="section" id="datasets">
+<h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h2>
+<p>Data in the portal is grouped in functional units called <em>datasets</em>.</p>
+<p>In the context of the COAT data management,</p>
+<p>a <strong>dataset</strong>:</p>
+<ul class="simple">
+<li><p>is a collection of data represented by the same set of metadata</p></li>
+<li><p>has a descriptive web page in the data portal</p></li>
+<li><p>could contain one or many data files (e.g: one per year)</p></li>
+<li><p>data files could be stored in different types and formats</p></li>
+<li><p>is identified by a DOI</p></li>
+<li><p>is provided a unique name and a permanent URL</p></li>
+<li><p>once published, is considered permanently available</p></li>
+<li><p>can have multiple versions</p></li>
+<li><p>can include additional non-data files (readme, coordinates, auxiliary)</p></li>
+<li><p>is formatted according to mandatory rules</p></li>
+</ul>
+<p>For additional information about DOIs, see <a class="reference external" href="https://datacite.org/dois.html">datacite documentation</a></p>
+</div>
+<div class="section" id="types-of-datasets">
+<h2>Types of datasets<a class="headerlink" href="#types-of-datasets" title="Permalink to this headline">¶</a></h2>
+<p>The COAT Data Portal provide a separate management for 3 types of datasets, each accessed from a different TAB of the portal:</p>
+<ul class="simple">
+<li><p>Collected datasets (input for State Variables)</p></li>
+<li><p>State Variables (Output of the project)</p></li>
+<li><p>Data sampling protocols (describing the study design behind data collection)</p></li>
+</ul>
+<img alt="_images/tabs.png" src="_images/tabs.png" />
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<p>Datasets are additionally grouped in Modules focused on the different monitoring targets of the
+COAT project activities.</p>
+<p>The modules are separated data compartments, and users need to be module editors
+to be able to upload datasets to a specific module.</p>
+<p>Modules are also a filtering category when searching for data.</p>
+<img alt="_images/modules.png" src="_images/modules.png" />
+</div>
+<div class="section" id="before-uploading-datasets">
+<h2>Before uploading datasets<a class="headerlink" href="#before-uploading-datasets" title="Permalink to this headline">¶</a></h2>
+<p>To be ready for data upload, dataset files need to be formatted according to mandatory formatting rules.
+Find more details in the <a class="reference internal" href="formatting.html#formatting"><span class="std std-ref">data formatting section</span></a></p>
+<p>Moreover, before uploading a dataset a user need to check that the corresponding protocol is already uploaded in the system.
+If not yet available, the first operation is to upload a protocol. See more details in the <a class="reference internal" href="protocol.html#protocol"><span class="std std-ref">protocol uploading section</span></a></p>
+<p>To help performing all the required steps before data upload, the <a class="reference internal" href="check.html#check"><span class="std std-ref">quick check section</span></a> helps to make sure that everything is compliant</p>
+</div>
+<div class="section" id="uploading-datasets">
+<h2>Uploading datasets<a class="headerlink" href="#uploading-datasets" title="Permalink to this headline">¶</a></h2>
+<p>When the data files are formatted and ready, the data upload process can start:
+A user authorized to add data to a module can create a new dataset by editing the metadata using a form in the data portal interface,
+then can add all the data files, following a specific order. data files can be added manually using the Graphic Interface, or using the data API.
+More detail in the <a class="reference internal" href="data.html#data"><span class="std std-ref">data upload section</span></a></p>
+<p>During upload procedures the dataset will be still in private mode. Once the dataset is uploaded it can be published.
+Publishing means creating a DOI for the dataset, and this step means making the dataset permanent,
+with the obligation of being always available for being found and accessed. If any modification needed,
+it will be solved by creating a new version of the dataset.</p>
+<p>datatasets can additionally be set in embargo mode, to keep private more recent data files.
+See details in the <a class="reference internal" href="data.html#embargo"><span class="std std-ref">embargo description</span></a></p>
+<div class="section" id="about">
+<h3>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the Data Portal</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="users">
+<h3>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="users.html">User types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="users.html#login-with-feide">Login with FEIDE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="preparing-data">
+<h3>Preparing data<a class="headerlink" href="#preparing-data" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Data formatting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#tabular-data">tabular data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#what-is-a-dataset">What is a dataset?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#dataset-naming">Dataset naming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#file-naming">File naming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#coordinate-files">Coordinate files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#column-names-in-data-files">Column names in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#spelling-and-general-text-formatting-in-data-files">Spelling and general text formatting in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#missing-data-in-files">Missing data in files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#date-formats-in-data-files">Date formats in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#locality-names-in-data-files">Locality names in data files</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="quick-check-before-upload">
+<h3>Quick check before upload<a class="headerlink" href="#quick-check-before-upload" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="check.html">Quick check</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="check.html#dataset-requirements">1. Dataset requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html#data-files">2. Data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html#sampling-protocol">3. Sampling protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html#coordinates-file">4. Coordinates file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html#auxiliary-files">5. Auxiliary files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html#readme-file">6. Readme file</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="uploading-a-protocol">
+<h3>Uploading a protocol<a class="headerlink" href="#uploading-a-protocol" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="protocol.html">Upload a protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="protocol.html#protocol-upload-instructions">Protocol Upload instructions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="uploading-data">
+<h3>Uploading data<a class="headerlink" href="#uploading-data" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data.html#check-for-protocol">Check for protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#upload-a-dataset">Upload a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#data-files-upload-order">Data files upload order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#publishing-the-dataset">Publishing the dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#dataset-versions">Dataset Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#embargo-management">Embargo management</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="editing-metadata">
+<h3>Editing metadata<a class="headerlink" href="#editing-metadata" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Editing metadata</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h3>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">COAT Data Portal</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the Data Portal</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="users.html">User types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Data formatting</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="check.html">Quick check</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="protocol.html">Upload a protocol</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Editing metadata</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="about.html" title="next chapter">About the Data Portal</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Matteo De Stefano.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
