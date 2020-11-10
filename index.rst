@@ -60,7 +60,32 @@ Modules are also a filtering category when searching for data.
 
 .. image:: _images/modules.png
 
+Before uploading datasets
+__________________________________________
 
+To be ready for data upload, dataset files need to be formatted according to mandatory formatting rules.
+Find more details in the :ref:`data formatting section <formatting>`
+
+Moreover, before uploading a dataset a user need to check that the corresponding protocol is already uploaded in the system.
+If not yet available, the first operation is to upload a protocol. See more details in the :ref:`protocol uploading section <protocol>`
+
+To help performing all the required steps before data upload, the :ref:`quick check section <check>` helps to make sure that everything is compliant
+
+Uploading datasets
+__________________________________________
+
+When the data files are formatted and ready, the data upload process can start:
+A user authorized to add data to a module can create a new dataset by editing the metadata using a form in the data portal interface,
+then can add all the data files, following a specific order. data files can be added manually using the Graphic Interface, or using the data API.
+More detail in the :ref:`data upload section <data>`
+
+During upload procedures the dataset will be still in private mode. Once the dataset is uploaded it can be published.
+Publishing means creating a DOI for the dataset, and this step means making the dataset permanent,
+with the obligation of being always available for being found and accessed. If any modification needed,
+it will be solved by creating a new version of the dataset.
+
+datatasets can additionally be set in embargo mode, to keep private more recent data files.
+See details in the :ref:`embargo description <embargo>`
 
 About
 ============================================
