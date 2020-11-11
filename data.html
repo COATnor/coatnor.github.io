@@ -86,11 +86,10 @@ whenever a dataset content changes, it is necessary to create a new version of i
 <p><strong>Warning:</strong> <em>the embargo management is a bit complex, please read carefully the details below:</em></p>
 <p>When a dataset contains data files which should be kept in embargo (not published),
 there is a specific workflow to follow, which implies the use of dataset versions.
+It requires to create more than one version of a dataset, with the first version immediately public and one or teo versions in embargo, kept private.
 Such a workflow avoids keeping private the entire dataset with all its content, but keeps private only the versions which include the data files to be embargoed.</p>
-<p>In case of a dataset which includes some recent data files to be embargoed, the workflow implies creating more than one version of the same dataset,
-with one version immediately public, and one or 2 versions in embargo, kept private.</p>
 <p>A user selects the embargo end date for the versions with embargo data files.
-The dataset version in embargo will stay private until the embargo end date, then will automatically switch to a “public” state.</p>
+A dataset version in embargo will stay private until the embargo end date, then will automatically switch to a “public” state.</p>
 <p>Let’s see an example…</p>
 <p>Ola Nordmann is a data portal’s editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
 Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
@@ -101,7 +100,7 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 <li><p>This dataset will be automatically labelled as “sample_dataset_v1”</p></li>
 <li><p>Ola publishes “sample_dataset_v1”</p></li>
 <li><p>Ola creates a new version using the “New Version” button, which will create automatically “sample_dataset_v2”, in private mode</p></li>
-<li><p>Ola adds 1 data file containing data for the year 2019, so that “sample_dataset_v2” contains data from 200 to 2019</p></li>
+<li><p>Ola adds 1 data file containing data for the year 2019, so that “sample_dataset_v2” contains data from 2000 to 2019</p></li>
 <li><p>Ola keeps the “sample_dataset_v2” private, and sets the embargo end date on January 1st 2022.</p></li>
 <li><p>Ola creates a third version of the dataset, “sample_dataset_v3” including year 2020 (again, private), with embargo end date January 1st 2023</p></li>
 <li><p>Ola uses python or R (ckanr) scripts to dwonload even the embargo files whenever needed</p></li>
