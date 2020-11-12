@@ -50,7 +50,7 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <a class="reference internal image-reference" href="_images/addataset.png"><img alt="_images/addataset.png" class="align-center" src="_images/addataset.png" style="width: 92%;" /></a>
 <ul class="simple">
 <li><p>The title should be identical to the dataset name</p></li>
-<li><p>The title should follow formatting rules (starting with V_for datasets from Varanger and S_for datasets from Svalbard)</p></li>
+<li><p>The title should follow formatting rules (starting with V_ for datasets from Varanger and S_ for datasets from Svalbard)</p></li>
 <li><p>Add a short description of the dataset. Here an example in Markdown format:</p></li>
 <li><p>Select an embargo policy. If the dataset doesn’t require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions <a class="reference internal" href="#embargo"><span class="std std-ref">here</span></a></p></li>
 <li><p>After filling all metadata, select Next: “Add data”</p></li>
@@ -65,6 +65,12 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <li><p>Upload the <strong>coordinates</strong> file. A description can be added, for example: “Coordinates of all sites included in the dataset”</p></li>
 <li><p>Upload all <strong>data files</strong> in chronological order (from older to newer)</p></li>
 </ol>
+</div>
+<div class="section" id="id3">
+<h2>Data files upload order<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>When a dataset is created, it defaults to “private” status.
+A private dataset is not visible or accessible by unregistered or regular users.
+Only logged-in users which are members or editors of the module including the dataset can see it</p>
 </div>
 <div class="section" id="publishing-the-dataset">
 <h2>Publishing the dataset<a class="headerlink" href="#publishing-the-dataset" title="Permalink to this headline">¶</a></h2>
@@ -84,28 +90,30 @@ whenever a dataset content changes, it is necessary to create a new version of i
 <p id="embargo">Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
 <p>By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.</p>
 <p><strong>Warning:</strong> <em>the embargo management is a bit complex, please read carefully the details below:</em></p>
-<p>When a dataset contains data files which should be kept in embargo (not published),
+<p>When a dataset contains data files which should be kept in embargo (not reachable),
 there is a specific workflow to follow, which implies the use of dataset versions.
-It requires to create more than one version of a dataset, with the first version immediately public and one or teo versions in embargo, kept private.
-Such a workflow avoids keeping private the entire dataset with all its content, but keeps private only the versions which include the data files to be embargoed.</p>
+It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access
+Such a workflow allows visualizing the most updated metadata, and the list of files, but keeps accessible only data from the non-embargoed dataset.</p>
 <p>A user selects the embargo end date for the versions with embargo data files.
-A dataset version in embargo will stay private until the embargo end date, then will automatically switch to a “public” state.</p>
+A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available on embargo end date.
+Not authorized users will be informed that a dataset is under umbargo, and need to look for a pervious version (the one with non-embargoed data files)</p>
 <p>Let’s see an example…</p>
 <p>Ola Nordmann is a data portal’s editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
 Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
 No one will blame Ola Normann for this choice, even if everyone knows that keeping all the data public is the best.</p>
 <p>Here his workflow:</p>
 <ul class="simple">
-<li><p>Ola creates the first dataset version, which contains only data which can be public (from year 2000 to year 2018), and calls it “sample_dataset”</p></li>
-<li><p>This dataset will be automatically labelled as “sample_dataset_v1”</p></li>
-<li><p>Ola publishes “sample_dataset_v1”</p></li>
-<li><p>Ola creates a new version using the “New Version” button, which will create automatically “sample_dataset_v2”, in private mode</p></li>
-<li><p>Ola adds 1 data file containing data for the year 2019, so that “sample_dataset_v2” contains data from 2000 to 2019</p></li>
-<li><p>Ola keeps the “sample_dataset_v2” private, and sets the embargo end date on January 1st 2022.</p></li>
-<li><p>Ola creates a third version of the dataset, “sample_dataset_v3” including year 2020 (again, private), with embargo end date January 1st 2023</p></li>
-<li><p>Ola uses python or R (ckanr) scripts to dwonload even the embargo files whenever needed</p></li>
-<li><p>After 1 year, “sample_dataset_v2” is being automatically published, and becomes the default version of the dataset (the latest published version)</p></li>
-<li><p>Ola now has one more year of data, 2021, and creates a new version, including 2000 - 2021 (embargoed, private) with embargo end date january 1st 2023</p></li>
+<li><p>Ola creates the first dataset version, which contains only data which can be public (from year 2000 to year 2018), and calls it “sample_dataset”.</p></li>
+<li><p>This dataset will be automatically labelled as “sample_dataset_v1”.</p></li>
+<li><p>Ola publishes “sample_dataset_v1”.</p></li>
+<li><p>Ola creates a new version using the “New Version” button, which will create automatically “sample_dataset_v2”.</p></li>
+<li><p>Ola adds 1 data file containing data for the year 2019, so that “sample_dataset_v2” contains data from 2000 to 2019.</p></li>
+<li><p>Ola sets the embargo end date on January 1st 2022, and publishes “sample_dataset_v2”.</p></li>
+<li><p>Ola creates a third version of the dataset, “sample_dataset_v3” including year 2020, with embargo end date January 1st 2023.</p></li>
+<li><p>Ola publishes also “sample_dataset_v3”</p></li>
+<li><p>Ola may use python or R (ckanr) scripts using his api key credentials to download even the embargo files whenever needed.</p></li>
+<li><p>After 1 year, “sample_dataset_v2” removes all the blocks to data access, letting available also data from year 2019, and becomes the default version of the dataset (the latest published version).</p></li>
+<li><p>Ola now has one more year of data, 2021, and creates a new version, including 2000 - 2021 (embargoed) with embargo end date january 1st 2023.</p></li>
 <li><p>And so on…</p></li>
 </ul>
 </div>
@@ -148,6 +156,7 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 <li class="toctree-l2"><a class="reference internal" href="#check-for-protocol">Check for protocol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#upload-a-dataset">Upload a dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-files-upload-order">Data files upload order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Data files upload order</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-the-dataset">Publishing the dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dataset-versions">Dataset Versions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#embargo-management">Embargo management</a></li>

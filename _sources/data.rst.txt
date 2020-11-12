@@ -26,7 +26,7 @@ Upload a dataset
     :width: 92%
 
 * The title should be identical to the dataset name
-* The title should follow formatting rules (starting with \V_\ for datasets from Varanger and \S_\ for datasets from Svalbard)
+* The title should follow formatting rules (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
 * Add a short description of the dataset. Here an example in Markdown format:
 * Select an embargo policy. If the dataset doesn't require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions :ref:`here <embargo>`
 * After filling all metadata, select Next: "Add data"
@@ -52,6 +52,17 @@ Data files upload order
     :depth: 2
     :local:
 
+Data files upload order
+-------------------------------
+
+When a dataset is created, it defaults to "private" status.
+A private dataset is not visible or accessible by unregistered or regular users.
+Only logged-in users which are members or editors of the module including the dataset can see it
+
+
+.. contents::
+    :depth: 2
+    :local:
 
 Publishing the dataset
 -------------------------------
@@ -92,13 +103,14 @@ By default COAT data follow an Open Data policy. There is however the possibilit
 
 **Warning:** *the embargo management is a bit complex, please read carefully the details below:*
 
-When a dataset contains data files which should be kept in embargo (not published),
+When a dataset contains data files which should be kept in embargo (not reachable),
 there is a specific workflow to follow, which implies the use of dataset versions.
-It requires to create more than one version of a dataset, with the first version immediately public and one or teo versions in embargo, kept private.
-Such a workflow avoids keeping private the entire dataset with all its content, but keeps private only the versions which include the data files to be embargoed.
+It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access
+Such a workflow allows visualizing the most updated metadata, and the list of files, but keeps accessible only data from the non-embargoed dataset.
 
 A user selects the embargo end date for the versions with embargo data files.
-A dataset version in embargo will stay private until the embargo end date, then will automatically switch to a "public" state.
+A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available on embargo end date.
+Not authorized users will be informed that a dataset is under umbargo, and need to look for a pervious version (the one with non-embargoed data files)
 
 Let's see an example...
 
@@ -108,16 +120,17 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 
 Here his workflow:
 
-* Ola creates the first dataset version, which contains only data which can be public (from year 2000 to year 2018), and calls it "sample_dataset"
-* This dataset will be automatically labelled as "sample_dataset_v1"
-* Ola publishes "sample_dataset_v1"
-* Ola creates a new version using the "New Version" button, which will create automatically "sample_dataset_v2", in private mode
-* Ola adds 1 data file containing data for the year 2019, so that "sample_dataset_v2" contains data from 2000 to 2019
-* Ola keeps the "sample_dataset_v2" private, and sets the embargo end date on January 1st 2022.
-* Ola creates a third version of the dataset, "sample_dataset_v3" including year 2020 (again, private), with embargo end date January 1st 2023
-* Ola uses python or R (ckanr) scripts to dwonload even the embargo files whenever needed
-* After 1 year, "sample_dataset_v2" is being automatically published, and becomes the default version of the dataset (the latest published version)
-* Ola now has one more year of data, 2021, and creates a new version, including 2000 - 2021 (embargoed, private) with embargo end date january 1st 2023
+* Ola creates the first dataset version, which contains only data which can be public (from year 2000 to year 2018), and calls it "sample_dataset".
+* This dataset will be automatically labelled as "sample_dataset_v1".
+* Ola publishes "sample_dataset_v1".
+* Ola creates a new version using the "New Version" button, which will create automatically "sample_dataset_v2".
+* Ola adds 1 data file containing data for the year 2019, so that "sample_dataset_v2" contains data from 2000 to 2019.
+* Ola sets the embargo end date on January 1st 2022, and publishes "sample_dataset_v2".
+* Ola creates a third version of the dataset, "sample_dataset_v3" including year 2020, with embargo end date January 1st 2023.
+* Ola publishes also "sample_dataset_v3"
+* Ola may use python or R (ckanr) scripts using his api key credentials to download even the embargo files whenever needed.
+* After 1 year, "sample_dataset_v2" removes all the blocks to data access, letting available also data from year 2019, and becomes the default version of the dataset (the latest published version).
+* Ola now has one more year of data, 2021, and creates a new version, including 2000 - 2021 (embargoed) with embargo end date january 1st 2023.
 * And so on...
 
 
