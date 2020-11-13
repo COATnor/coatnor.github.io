@@ -48,11 +48,70 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <li><p>Go to Datasets and select “Add Dataset” (if not visible, you are not authorized: contact the module leader)</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/addataset.png"><img alt="_images/addataset.png" class="align-center" src="_images/addataset.png" style="width: 92%;" /></a>
+</div>
+<div class="section" id="edit-metadata">
+<h2>Edit metadata<a class="headerlink" href="#edit-metadata" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>The title should be identical to the dataset name</p></li>
-<li><p>The title should follow formatting rules (starting with V_ for datasets from Varanger and S_ for datasets from Svalbard)</p></li>
-<li><p>Add a short description of the dataset. Here an example in Markdown format:</p></li>
-<li><p>Select an embargo policy. If the dataset doesn’t require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions <a class="reference internal" href="#embargo"><span class="std std-ref">here</span></a></p></li>
+<li><p>The first operation required to add a new dataset to the portal is editing the metadata</p></li>
+</ul>
+<img alt="_images/title.png" class="align-center" src="_images/title.png" />
+<ul class="simple">
+<li><p><strong>Title (mandatory):</strong> should be identical to the dataset name (formatted according the <a class="reference internal" href="formatting.html#formatting"><span class="std std-ref">formatting rules</span></a>). It should start with a conventional prefix (starting with V_ for datasets from Varanger and S_ for datasets from Svalbard)</p></li>
+<li><p><strong>Module (mandatory):</strong> Select the module related to the dataset. The user need to be editor for the module.</p></li>
+<li><p><strong>Description (mandatory):</strong> Add a short description of the dataset. Here an example in Markdown format:</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/tags.png"><img alt="_images/tags.png" class="align-center" src="_images/tags.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Tags:</strong> Choose a list of keywords from a controlled vocabulary</p></li>
+<li><p><strong>Topic Category Code:</strong> This is a general category for classifying data, following a commonly used standard in data repositories</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/embargo.png"><img alt="_images/embargo.png" class="align-center" src="_images/embargo.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Embargo:</strong> Select an embargo policy. If the dataset doesn’t require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions <a class="reference internal" href="#embargo"><span class="std std-ref">here</span></a></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/license.png"><img alt="_images/license.png" class="align-center" src="_images/license.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>License:</strong> Defines which License is given to data. Defaults to CC-BY 4.0, chosen as the COAT project’s license for data.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/contacts.png"><img alt="_images/contacts.png" class="align-center" src="_images/contacts.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Contact Person (mandatory):</strong> It is the name of the person responsible for the dataset. Coul be different from the person editing metadata. choosen from the list of registered users.</p></li>
+<li><p><strong>Email Address:</strong> of the contact person.</p></li>
+<li><p><strong>Title of Position:</strong> What is the professional role of the contact person?</p></li>
+<li><p><strong>Organization Name (mandatory):</strong> Which of the COAT partner Institutions is responsible for the dataset?</p></li>
+<li><p><strong>Associated Parties:</strong> Sometimes external institutions are involved. Not part of the Organization list above.</p></li>
+<li><p><strong>Persons:</strong> Are there other key people related to the dataset? Ex: Field Technicians, PhD students, etc.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/temporal.png"><img alt="_images/temporal.png" class="align-center" src="_images/temporal.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Temporal Extent:</strong> What is the time span of the included data?</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/location.png"><img alt="_images/location.png" class="align-center" src="_images/location.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Geographic Location:</strong> choose one or more locations related to the dataset collection. It is a hierarchical taxonomy of locations. From the location names bounding boxes are chosen, used also for geographical filtering of the datasets on the minimap.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/scientific.png"><img alt="_images/scientific.png" class="align-center" src="_images/scientific.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Scientific Name:</strong> One or more choices allowed. Scientific names of the species described by the datasets</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/scripts.png"><img alt="_images/scripts.png" class="align-center" src="_images/scripts.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Associated Scripts:</strong> A link to the repository with the scripts related to the dataset</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/m_protocol.png"><img alt="_images/m_protocol.png" class="align-center" src="_images/m_protocol.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Associated Study Protocol (mandatory):</strong> This is the study protocol describing the dataset, choosen from he available ones. A study protocol needs to be added in its specific section before adding a dataset.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/embargo.png"><img alt="_images/embargo.png" class="align-center" src="_images/embargo.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Bibliographic Citation:</strong> TODO</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/funding.png"><img alt="_images/funding.png" class="align-center" src="_images/funding.png" style="width: 92%;" /></a>
+<ul class="simple">
+<li><p><strong>Funding Source:</strong> Describe the source of funding, if relevant</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/next.png"><img alt="_images/next.png" class="align-center" src="_images/next.png" style="width: 92%;" /></a>
+<ul class="simple">
 <li><p>After filling all metadata, select Next: “Add data”</p></li>
 <li><p>Upload all the data file in the following order, add a filename (best to keep the file’s name by click on “Fill field with filename or URL”) and choose the correct file format</p></li>
 </ul>
@@ -66,8 +125,8 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <li><p>Upload all <strong>data files</strong> in chronological order (from older to newer)</p></li>
 </ol>
 </div>
-<div class="section" id="id3">
-<h2>Data files upload order<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="private-or-public-datasets">
+<h2>Private or public datasets<a class="headerlink" href="#private-or-public-datasets" title="Permalink to this headline">¶</a></h2>
 <p>When a dataset is created, it defaults to “private” status.
 A private dataset is not visible or accessible by unregistered or regular users.
 Only logged-in users which are members or editors of the module including the dataset can see it</p>
@@ -86,8 +145,8 @@ menu of the dataset and setting the <em>‘Visibility’</em> metadata element t
 whenever a dataset content changes, it is necessary to create a new version of it.</p>
 </div>
 <div class="section" id="embargo-management">
-<h2>Embargo management<a class="headerlink" href="#embargo-management" title="Permalink to this headline">¶</a></h2>
-<p id="embargo">Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
+<span id="embargo"></span><h2>Embargo management<a class="headerlink" href="#embargo-management" title="Permalink to this headline">¶</a></h2>
+<p>Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
 <p>By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.</p>
 <p><strong>Warning:</strong> <em>the embargo management is a bit complex, please read carefully the details below:</em></p>
 <p>When a dataset contains data files which should be kept in embargo (not reachable),
@@ -155,8 +214,9 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data upload</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#check-for-protocol">Check for protocol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#upload-a-dataset">Upload a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-metadata">Edit metadata</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-files-upload-order">Data files upload order</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Data files upload order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#private-or-public-datasets">Private or public datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-the-dataset">Publishing the dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dataset-versions">Dataset Versions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#embargo-management">Embargo management</a></li>
