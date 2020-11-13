@@ -140,13 +140,6 @@ Uploading data
 
    data
 
-Editing metadata
-============================================
-
-.. toctree::
-   :maxdepth: 2
-
-   metadata
 
 Indices and tables
 ==================
