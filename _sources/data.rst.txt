@@ -174,6 +174,17 @@ Dataset Versions
 Datasets already published cannot be removed or modified, because of the FAIR requirement of being permanent and findable for citation and reuse purposes.
 whenever a dataset content changes, it is necessary to create a new version of it.
 
+Whenever a dataset gets created, the system automatically adds a version prefix: At the first dataset creation the dataset will have "_v1" added at the end of the name.
+When the dataset has been published, it is possible to modify it's content only by creating a new version. To create a new version, choose the
+
+.. image:: _images/newversions.png
+
+* This will create a new version, which will be visible on the left bar, with buttons to switch from version to version:
+
+.. image:: _images/versions.png
+
+
+
 .. contents::
     :depth: 2
     :local:
@@ -191,12 +202,12 @@ By default COAT data follow an Open Data policy. There is however the possibilit
 
 When a dataset contains data files which should be kept in embargo (not reachable),
 there is a specific workflow to follow, which implies the use of dataset versions.
-It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access
+It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access.
 Such a workflow allows visualizing the most updated metadata, and the list of files, but keeps accessible only data from the non-embargoed dataset.
 
 A user selects the embargo end date for the versions with embargo data files.
-A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available on embargo end date.
-Not authorized users will be informed that a dataset is under umbargo, and need to look for a pervious version (the one with non-embargoed data files)
+A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
+Not authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
 
 Let's see an example...
 
