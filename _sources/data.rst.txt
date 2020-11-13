@@ -28,35 +28,30 @@ Upload a dataset
 Edit metadata
 -------------------------------
 
-* The first operation required to add a new dataset to the portal is editing the metadata
+* The first operation required to add a new dataset to the portal is editing the metadata:
+* **Title (mandatory):** should be identical to the dataset name (formatted according the :ref:`formatting rules <formatting>`). It should start with a conventional prefix (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
+* **Module (mandatory):** Select the module related to the dataset. The user need to be editor for the module.
+* **Description (mandatory):** Add a short description of the dataset. Here an example in Markdown format:
 
 .. image:: _images/title.png
     :align: center
 
-* **Title (mandatory):** should be identical to the dataset name (formatted according the :ref:`formatting rules <formatting>`). It should start with a conventional prefix (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
-* **Module (mandatory):** Select the module related to the dataset. The user need to be editor for the module.
-* **Description (mandatory):** Add a short description of the dataset. Here an example in Markdown format:
+* **Tags:** Choose a list of keywords from a controlled vocabulary
+* **Topic Category Code:** This is a general category for classifying data, following a commonly used standard in data repositories
 
 .. image:: _images/tags.png
     :align: center
     :width: 92%
 
-* **Tags:** Choose a list of keywords from a controlled vocabulary
-* **Topic Category Code:** This is a general category for classifying data, following a commonly used standard in data repositories
+* **Embargo:** Select an embargo policy. If the dataset doesn't require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions :ref:`here <embargo>`
 
 .. image:: _images/embargo.png
     :align: center
     :width: 92%
 
-* **Embargo:** Select an embargo policy. If the dataset doesn't require an embargo, go on with next point. If your dataset include data less than 2 years old, you could select an embargo end date. Read the detailed instructions on how to manage embargo data and dataset versions :ref:`here <embargo>`
-
-.. image:: _images/license.png
-    :align: center
-    :width: 92%
-
 * **License:** Defines which License is given to data. Defaults to CC-BY 4.0, chosen as the COAT project's license for data.
 
-.. image:: _images/contacts.png
+.. image:: _images/license.png
     :align: center
     :width: 92%
 
@@ -67,53 +62,60 @@ Edit metadata
 * **Associated Parties:** Sometimes external institutions are involved. Not part of the Organization list above.
 * **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, etc.
 
-.. image:: _images/temporal.png
+.. image:: _images/contacts.png
     :align: center
     :width: 92%
 
 * **Temporal Extent:** What is the time span of the included data?
 
-.. image:: _images/location.png
+.. image:: _images/temporal.png
     :align: center
     :width: 92%
 
 * **Geographic Location:** choose one or more locations related to the dataset collection. It is a hierarchical taxonomy of locations. From the location names bounding boxes are chosen, used also for geographical filtering of the datasets on the minimap.
 
-.. image:: _images/scientific.png
+.. image:: _images/location.png
     :align: center
     :width: 92%
 
 * **Scientific Name:** One or more choices allowed. Scientific names of the species described by the datasets
 
-.. image:: _images/scripts.png
+.. image:: _images/scientific.png
     :align: center
     :width: 92%
 
-* **Associated Scripts:** A link to the repository with the scripts related to the dataset
+* **Associated Scripts:** A link to the repository with the scripts related to the dataset.
 
-.. image:: _images/m_protocol.png
+.. image:: _images/scripts.png
     :align: center
     :width: 92%
 
 * **Associated Study Protocol (mandatory):** This is the study protocol describing the dataset, choosen from he available ones. A study protocol needs to be added in its specific section before adding a dataset.
 
-.. image:: _images/embargo.png
+
+.. image:: _images/m_protocol.png
     :align: center
     :width: 92%
 
 * **Bibliographic Citation:** TODO
 
+.. image:: _images/embargo.png
+    :align: center
+    :width: 92%
+
+* **Funding Source:** Describe the source of funding, if relevant.
+
 .. image:: _images/funding.png
     :align: center
     :width: 92%
 
-* **Funding Source:** Describe the source of funding, if relevant
+* After filling all metadata, select Next: "Add data"
 
 .. image:: _images/next.png
     :align: center
     :width: 92%
 
-* After filling all metadata, select Next: "Add data"
+
 * Upload all the data file in the following order, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
 
 
