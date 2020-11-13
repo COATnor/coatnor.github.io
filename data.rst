@@ -174,20 +174,40 @@ Dataset Versions
 Datasets already published cannot be removed or modified, because of the FAIR requirement of being permanent and findable for citation and reuse purposes.
 whenever a dataset content changes, it is necessary to create a new version of it.
 
-Whenever a dataset gets created, the system automatically adds a version prefix: At the first dataset creation the dataset will have "_v1" added at the end of the name.
-When the dataset has been published, it is possible to modify it's content only by creating a new version. To create a new version, choose the
+Whenever a dataset gets created, the system automatically adds a **version prefix**: At the first dataset creation the dataset will have "_v1" added at the end of the name.
+When the dataset has been published, it is possible to modify it's content only by creating a new version. To create a new version, click on the "New Version" button:
 
 .. image:: _images/newversions.png
 
-* This will create a new version, which will be visible on the left bar, with buttons to switch from version to version:
+This will create a new version, which will be visible on the left bar, with buttons to switch from version to version:
 
 .. image:: _images/versions.png
 
+Every version of a dataset has it's own identity and **DOI**, which allows accurate dataset citation in publications at the version level.
+Whenever visualizing an older version of a dataset, a friendly reminder will inform the user that it is an older version, with a link to the latest.
 
+.. image:: _images/oldversion.png
+
+When accessing to a dataset's main page, it will always show **the latest public version** of the dataset
 
 .. contents::
     :depth: 2
     :local:
+
+Updating a dataset
+-------------------------------
+
+After creating a **new version** of a dataset, which is identical to the previous version at the moment of creation,
+a user should modify the dataset to add data files or modify metadata.
+
+For both operations A user needs to click on the "Manage" button (top right) of the dataset page:
+
+.. image:: _images/manage.png
+
+The "manage" button will bring the user to the editing section for a dataset, defaulting to metadata editing.
+If a user needs to upload new data files instead, it is enough to click on the "Resources" TAB, then "Add new resource":
+
+.. image:: _images/updateresources.png
 
 .. _embargo:
 
@@ -200,13 +220,13 @@ By default COAT data follow an Open Data policy. There is however the possibilit
 
 **Warning:** *the embargo management is a bit complex, please read carefully the details below:*
 
-When a dataset contains data files which should be kept in embargo (not reachable),
-there is a specific workflow to follow, which implies the use of dataset versions.
+When a dataset contains **data files** which should be kept in embargo (not reachable),
+there is a specific workflow to follow, which implies the use of **dataset versions**.
 It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access.
 Such a workflow allows visualizing the most updated metadata, and the list of files, but keeps accessible only data from the non-embargoed dataset.
 
 A user selects the embargo end date for the versions with embargo data files.
-A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
+A dataset version in embargo will keep **all the data files** inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
 Not authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
 
 Let's see an example...
