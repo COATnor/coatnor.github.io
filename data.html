@@ -142,25 +142,37 @@ menu of the dataset and setting the <em>‘Visibility’</em> metadata element t
 <h2>Dataset Versions<a class="headerlink" href="#dataset-versions" title="Permalink to this headline">¶</a></h2>
 <p>Datasets already published cannot be removed or modified, because of the FAIR requirement of being permanent and findable for citation and reuse purposes.
 whenever a dataset content changes, it is necessary to create a new version of it.</p>
-<p>Whenever a dataset gets created, the system automatically adds a version prefix: At the first dataset creation the dataset will have “_v1” added at the end of the name.
-When the dataset has been published, it is possible to modify it’s content only by creating a new version. To create a new version, choose the</p>
+<p>Whenever a dataset gets created, the system automatically adds a <strong>version prefix</strong>: At the first dataset creation the dataset will have “_v1” added at the end of the name.
+When the dataset has been published, it is possible to modify it’s content only by creating a new version. To create a new version, click on the “New Version” button:</p>
 <img alt="_images/newversions.png" src="_images/newversions.png" />
-<ul class="simple">
-<li><p>This will create a new version, which will be visible on the left bar, with buttons to switch from version to version:</p></li>
-</ul>
+<p>This will create a new version, which will be visible on the left bar, with buttons to switch from version to version:</p>
 <img alt="_images/versions.png" src="_images/versions.png" />
+<p>Every version of a dataset has it’s own identity and <strong>DOI</strong>, which allows accurate dataset citation in publications at the version level.
+Whenever visualizing an older version of a dataset, a friendly reminder will inform the user that it is an older version, with a link to the latest.</p>
+<img alt="_images/oldversion.png" src="_images/oldversion.png" />
+<p>When accessing to a dataset’s main page, it will always show <strong>the latest public version</strong> of the dataset</p>
+</div>
+<div class="section" id="updating-a-dataset">
+<h2>Updating a dataset<a class="headerlink" href="#updating-a-dataset" title="Permalink to this headline">¶</a></h2>
+<p>After creating a <strong>new version</strong> of a dataset, which is identical to the previous version at the moment of creation,
+a user should modify the dataset to add data files or modify metadata.</p>
+<p>For both operations A user needs to click on the “Manage” button (top right) of the dataset page:</p>
+<img alt="_images/manage.png" src="_images/manage.png" />
+<p>The “manage” button will bring the user to the editing section for a dataset, defaulting to metadata editing.
+If a user needs to upload new data files instead, it is enough to click on the “Resources” TAB, then “Add new resource”:</p>
+<img alt="_images/updateresources.png" src="_images/updateresources.png" />
 </div>
 <div class="section" id="embargo-management">
 <span id="embargo"></span><h2>Embargo management<a class="headerlink" href="#embargo-management" title="Permalink to this headline">¶</a></h2>
 <p>Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
 <p>By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.</p>
 <p><strong>Warning:</strong> <em>the embargo management is a bit complex, please read carefully the details below:</em></p>
-<p>When a dataset contains data files which should be kept in embargo (not reachable),
-there is a specific workflow to follow, which implies the use of dataset versions.
+<p>When a dataset contains <strong>data files</strong> which should be kept in embargo (not reachable),
+there is a specific workflow to follow, which implies the use of <strong>dataset versions</strong>.
 It requires to create more than one version of a dataset, with the first version without an embargo, with data files reachable, and one or two versions in embargo, without data access.
 Such a workflow allows visualizing the most updated metadata, and the list of files, but keeps accessible only data from the non-embargoed dataset.</p>
 <p>A user selects the embargo end date for the versions with embargo data files.
-A dataset version in embargo will keep the data files inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
+A dataset version in embargo will keep <strong>all the data files</strong> inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
 Not authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)</p>
 <p>Let’s see an example…</p>
 <p>Ola Nordmann is a data portal’s editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
@@ -225,6 +237,7 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 <li class="toctree-l2"><a class="reference internal" href="#private-or-public-datasets">Private or public datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-the-dataset">Publishing the dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dataset-versions">Dataset Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-a-dataset">Updating a dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#embargo-management">Embargo management</a></li>
 </ul>
 </li>
