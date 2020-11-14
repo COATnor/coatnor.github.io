@@ -21,10 +21,14 @@ Login with Feide
 
 To create a user in the Data Portal you need to login fo the first time using FEIDE.
 
+.. image:: _images/feide.png
+
 Regular Users
 -------------------------------------------
 
-Regular users are users which logged in to the system at least once. A regualr user has no authorizations in the Data Portal,
+Regular users are users which logged in to the system at least once. A regualr user is listed as a possible choice in the metadata dropdown list for selecting the owner of a dataset.
+A regular user can receive authorizations, and be upgraded to editor of one or more modules or administrator of the portal.
+A regular user has no authorizations in the Data Portal,
 and can visualize the same things that a not-logged in user can:
 
 * See only public datasets
