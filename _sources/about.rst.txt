@@ -6,6 +6,10 @@ About the Data Portal
 
 The COAT Data Portal is is based on FAIR and Open data principles.
 
+`check the FAIR principles here <https://www.go-fair.org/fair-principles/>`_
+
+.. image:: _images/FAIR_data_principles.jpg
+
 In COAT we aim to publish all research data unless limited by either privacy or license restrictions.
 This means that the majority of COAT data is distributed under the Creative Commons Public License (CC BY 4.0).
 
