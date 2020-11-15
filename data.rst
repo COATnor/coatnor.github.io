@@ -200,7 +200,7 @@ Updating a dataset
 After creating a **new version** of a dataset, which is identical to the previous version at the moment of creation,
 a user should modify the dataset to add data files or modify metadata.
 
-For both operations A user needs to click on the "Manage" button (top right) of the dataset page:
+For both operations a user needs to click on the "Manage" button (top right) of the dataset page:
 
 .. image:: _images/manage.png
 
@@ -208,6 +208,20 @@ The "manage" button will bring the user to the editing section for a dataset, de
 If a user needs to upload new data files instead, it is enough to click on the "Resources" TAB, then "Add new resource":
 
 .. image:: _images/updateresources.png
+
+Upload a State Variable
+-------------------------------
+
+state Variables are a special type of dataset, Representing the output of the COAT project.
+
+State Variable management is similar to the dataset management, with the exception of having less metadata elements and one specific metadata element added.
+In fact, State Variables are derived from input datasets listed under the "Datasets" TAB, and contain provenance information in their metadata.
+Specifically, while adding a new State Variable, a user selects a list of associated data picked from the input datasets available in the portal:
+
+.. image:: _images/associated.png
+
+It is possible to pick specific versions of the datasets, and information about the time span covered by the dataset's version will be visible.
+
 
 .. _embargo:
 
