@@ -118,6 +118,7 @@ Edit metadata
 
 * Upload all the data file in the following order, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
 
+:ref:`go back to top of the page <data>`
 
 .. contents::
     :depth: 2
@@ -168,6 +169,8 @@ menu of the dataset and setting the *'Visibility'* metadata element to *'Public'
 
 .. image:: _images/visibility.png
 
+:ref:`go back to top of the page <data>`
+
 Dataset Versions
 -------------------------------
 
@@ -190,6 +193,8 @@ Whenever visualizing an older version of a dataset, a friendly reminder will inf
 
 When accessing to a dataset's main page, it will always show **the latest public version** of the dataset
 
+:ref:`go back to top of the page <data>`
+
 .. contents::
     :depth: 2
     :local:
@@ -209,10 +214,14 @@ If a user needs to upload new data files instead, it is enough to click on the "
 
 .. image:: _images/updateresources.png
 
+:ref:`go back to top of the page <data>`
+
 Upload a State Variable
 -------------------------------
 
 state Variables are a special type of dataset, Representing the output of the COAT project.
+
+.. image:: _images/statevariabletab.png
 
 State Variable management is similar to the dataset management, with the exception of having less metadata elements and one specific metadata element added.
 In fact, State Variables are derived from input datasets listed under the "Datasets" TAB, and contain provenance information in their metadata.
@@ -222,6 +231,7 @@ Specifically, while adding a new State Variable, a user selects a list of associ
 
 It is possible to pick specific versions of the datasets, and information about the time span covered by the dataset's version will be visible.
 
+:ref:`go back to top of the page <data>`
 
 .. _embargo:
 
@@ -265,7 +275,7 @@ Here his workflow:
 * And so on...
 
 
-
+:ref:`go back to top of the page <data>`
 
 .. contents::
     :depth: 2
