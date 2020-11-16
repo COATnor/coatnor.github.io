@@ -219,7 +219,9 @@ If a user needs to upload new data files instead, it is enough to click on the "
 Upload a State Variable
 -------------------------------
 
-state Variables are a special type of dataset, Representing the output of the COAT project.
+state Variables are a special type of secundary dataset,
+which are calculated from primary data originating either from within COAT or from external sources.
+The *State Variables* are the primary input to the quantitative analysis and predictive modelling performed in COAT.
 
 .. image:: _images/statevariabletab.png
 
@@ -251,7 +253,7 @@ Such a workflow allows visualizing the most updated metadata, and the list of fi
 
 A user selects the embargo end date for the versions with embargo data files.
 A dataset version in embargo will keep **all the data files** inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
-Not authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
+Non-authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
 
 Let's see an example...
 

@@ -5,9 +5,8 @@ Upload a protocol
 
 Protocol Upload instructions
 -------------------------------
-
-The Sampling protocol need to be added to the data portal in its specific section before uploading datasets,
-because a link to an existing protocol in the system is a mandatory requirement of dataset metadata.
+While creating a new dataset, a mandatory requirement in metadata is a link to an existing sampling protocol.
+For this reason the sampling protocol has to be added to the data portal in its specific section before uploading related datasets.
 
 .. image:: _images/protocolstab.png
 

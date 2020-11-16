@@ -42,7 +42,7 @@ __________________________________________
 The COAT Data Portal provide a separate management for 3 types of datasets, each accessed from a different TAB of the portal:
 
 * Collected **datasets** (input for State Variables)
-* **State Variables** (Output of the project)
+* **State Variables** (Derived datasets, scientific focus of the COAT project)
 * Data sampling **protocols** (describing the study design behind data collection)
 
 .. image:: _images/tabs.png
@@ -140,10 +140,12 @@ Uploading data
 
    data
 
+Downloading data
+============================================
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   download
+
+
