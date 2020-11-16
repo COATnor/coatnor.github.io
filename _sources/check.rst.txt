@@ -14,7 +14,7 @@ The data formatting rules are also included in the Data Management Plan of the C
 1. Dataset requirements
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-* A coordinates file is mandatory. Se below for more details
+* A **coordinates** file is mandatory. Se below for more details
 * A Sampling Protocol related to the dataset needs to be already available in the portal
 
 2. Data files

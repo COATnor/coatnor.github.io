@@ -245,5 +245,5 @@ The list defines the spelling of all place names found at the top-four levels of
 **sn_region > sn_subregion > sn_locality > sn_section**
 
 Note that the names confirm to the general rules of
-text formatting (no capital letters, no Scandinavian letters etc). Anyone in need ofthe proper spelling
+text formatting (no capital letters, no Scandinavian letters etc). Anyone in need of the proper spelling
 (for instance for plotting purposes) can consult the sheet “correct spelling” in the same file.

@@ -251,7 +251,7 @@ Such a workflow allows visualizing the most updated metadata, and the list of fi
 
 A user selects the embargo end date for the versions with embargo data files.
 A dataset version in embargo will keep **all the data files** inaccessible until the embargo end date, then will automatically make them available at the embargo end date.
-Not authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
+Non-authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)
 
 Let's see an example...
 

@@ -140,10 +140,12 @@ Uploading data
 
    data
 
+Downloading data
+============================================
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   download
+
+
