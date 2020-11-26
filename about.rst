@@ -29,4 +29,6 @@ stored in suitable code repositories.
 Data Management Plan
 --------------------------------
 
-**TODO: link to DMP? More content here?**
+**TODO: link to DMP? More content here?** 
+[Eeva: yes it is good to have link to DMP here]
+
