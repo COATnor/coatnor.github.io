@@ -32,6 +32,7 @@ Edit metadata
 * **Title (mandatory):** should be identical to the dataset name (formatted according the :ref:`formatting rules <formatting>`). It should start with a conventional prefix (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
 * **Module (mandatory):** Select the module related to the dataset. The user need to be editor for the module.
 * **Description (mandatory):** Add a short description of the dataset. Here an example in Markdown format:
+[Eeva: there is no visible example in the description field image below]
 
 .. image:: _images/title.png
     :align: center
@@ -55,12 +56,14 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Contact Person (mandatory):** It is the name of the person responsible for the dataset. Coul be different from the person editing metadata. choosen from the list of registered users.
+* **Contact Person (mandatory):** It is the name of the person responsible for the dataset. Could be different from the person editing metadata. choosen from the list of registered users.
 * **Email Address:** of the contact person.
 * **Title of Position:** What is the professional role of the contact person?
 * **Organization Name (mandatory):** Which of the COAT partner Institutions is responsible for the dataset?
-* **Associated Parties:** Sometimes external institutions are involved. Not part of the Organization list above.
-* **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, etc.
+* **Associated Parties:** Additional institutions that are involved, either COAT parters or external institutions.
+[Eeva: I think we should put it here if additional COAT institutions are involved? Edited accordingly] 
+
+* **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, people who were in charge of the dataset previously etc.
 
 .. image:: _images/contacts.png
     :align: center
@@ -72,7 +75,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Geographic Location:** choose one or more locations related to the dataset collection. It is a hierarchical taxonomy of locations. From the location names bounding boxes are chosen, used also for geographical filtering of the datasets on the minimap.
+* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names. The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
 
 .. image:: _images/location.png
     :align: center
@@ -84,7 +87,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Associated Scripts:** A link to the repository with the scripts related to the dataset.
+* **Associated Scripts:** A link to the repository with publicly available scripts related to the dataset. Typically scripts that use the COAT raw data for calculating state variables.
 
 .. image:: _images/scripts.png
     :align: center
