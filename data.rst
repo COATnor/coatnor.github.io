@@ -147,7 +147,7 @@ Private or public datasets
 
 When a dataset is created, it defaults to "private" status.
 A private dataset is not visible or accessible by unregistered or regular users.
-Only logged-in users which are members or editors of the module including the dataset can see it
+Only logged-in users who are members or editors of the module including the dataset can see it
 
 
 .. contents::
@@ -243,9 +243,9 @@ It is possible to pick specific versions of the datasets, and information about 
 Embargo management
 -------------------------------
 
-Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.
+Datasets with an embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.
 
-By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.
+By default COAT data follow an Open Data policy. It is however possibile to create datasets with a two-year embargo. This would typically be the case for a dataset where older data is set publicly available but the last two years data is only available for COAT users. In such case, only users with user or editor status in the relevant module can see the data.
 
 **Warning:** *the embargo management is a bit complex, please read carefully the details below:*
 
@@ -263,6 +263,7 @@ Let's see an example...
 Ola Nordmann is a data portal's editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
 Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
 No one will blame Ola Normann for this choice, even if everyone knows that keeping all the data public is the best.
+[Eeva: not sure if I get this right; do you mean that working on PhD is the only OK reason for embargo, or only 2 years is an OK embargo? We do have also other than PhD-project related datasets that will have 2 year embargo. This should be edited so that the meaning is more clearly "only 2 years of embargo is OK".]
 
 Here his workflow:
 
