@@ -8,7 +8,7 @@ COAT Data Management
 ===============================================
 
 The `COAT Data Portal <https://data.coat.no>`_ is designed to share data collected and created following
-FAIR data principles in the frame of the COAT project. For more information about the COAT project and FAIR data principles
+FAIR data principles in the frame of the Climate-ecological Observatory for Arctic Tundra (COAT). For more information about COAT and FAIR data principles
 refer to the :ref:`about section <about>`
 
 .. image:: _images/dataportal_homepage_screenshot.png
@@ -16,7 +16,7 @@ refer to the :ref:`about section <about>`
 Datasets
 __________________________________________
 
-Data in the portal is grouped in functional units called *datasets*.
+Data in the COAT data portal is grouped in units called *datasets*.
 
 In the context of the COAT data management,
 
@@ -31,7 +31,7 @@ a **dataset**:
 * once published, is considered permanently available
 * can have multiple versions
 * can include additional non-data files (readme, coordinates, auxiliary)
-* is formatted according to mandatory rules
+* is formatted according to a specific set of guidelines
 
 
 *For additional information about DOIs, see* `datacite documentation <https://datacite.org/dois.html>`_
@@ -39,10 +39,10 @@ a **dataset**:
 Types of datasets
 __________________________________________
 
-The COAT Data Portal provide a separate management for 3 types of datasets, each accessed from a different TAB of the portal:
+The COAT Data Portal has 3 types of datasets, each accessed from a different TAB of the portal:
 
-* Collected **datasets** (input for State Variables)
-* **State Variables** (Derived datasets, scientific focus of the COAT project)
+* Collected **datasets** (input for State Variables, raw data complient to COAT formats)
+* **State Variables** (Derived datasets for assessing state of COAT monitoring targets)
 * Data sampling **protocols** (describing the study design behind data collection)
 
 .. image:: _images/tabs.png
@@ -50,8 +50,7 @@ The COAT Data Portal provide a separate management for 3 types of datasets, each
 Modules
 __________________________________________
 
-Datasets are additionally grouped in Modules focused on the different monitoring targets of the
-COAT project activities.
+Datasets are additionally grouped in Modules, accoring to the food web module structure of COAT. 
 
 The modules are separated data compartments, and users need to be module editors
 to be able to upload datasets to a specific module.
@@ -66,10 +65,10 @@ __________________________________________
 To be ready for data upload, dataset files need to be formatted according to mandatory formatting rules.
 Find more details in the :ref:`data formatting section <formatting>`
 
-Moreover, before uploading a dataset a user need to check that the corresponding protocol is already uploaded in the system.
+Before uploading a dataset a user needs to check that the corresponding protocol is already uploaded in the system.
 If not yet available, the first operation is to upload a protocol. See more details in the :ref:`protocol uploading section <protocol>`
 
-To help performing all the required steps before data upload, the :ref:`quick check section <check>` helps to make sure that everything is compliant
+To help performing all the required steps before data upload, the :ref:`quick check section <check>` helps to make sure that everything is ready for upload.
 
 Uploading datasets
 __________________________________________
@@ -81,15 +80,24 @@ When the data files are formatted and ready, the data upload process can start:
 * then can add all the data files, following a specific order.
 * data files can be added manually using the Graphic Interface, or by command line or scripting using the data API.
 
-*More details in the* :ref:`data upload section <data>`
+More details in the :ref:`data upload section <data>`
 
 During upload procedures the dataset will be still in private mode. Once the dataset is uploaded it can be published.
-Publishing means creating a DOI for the dataset, and this step means making the dataset permanent,
+Publishing means creating a DOI for the dataset. This means making the dataset permanent,
 with the obligation of being always available, findable and accessible. If any modification needed,
 it will be solved by creating a new version of the dataset.
 
-datatasets can additionally be set in embargo mode, to keep private the most recent data files (up to 2 years).
+Datatasets can be set in an embargo mode, to keep private the most recent data files (up to 2 years).
 See details in the :ref:`embargo description <embargo>`
+
+Uploading data to existing dataset
+__________________________________________
+
+New data can be added to an existing dataset, for example to add one more year of monitoring data.
+To upload new data to an existing dataset, a user needs to create a new version of an existing dataset. 
+
+More details in the "Updating dataset" section of :ref:`data upload section <data>`
+[Eeva: dont think I got this quite right, Matteo pleas format so it goes here: https://coatnor.github.io/data.html#updating-a-dataset]
 
 About
 ============================================
