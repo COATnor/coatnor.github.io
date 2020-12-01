@@ -4,16 +4,16 @@ Data formatting
 ==================================
 
 Before uploading to the COAT Data Portal,
-datasets need to be formatted according to formatting rules defined for the COAT project.
+datasets need to be formatted according to a set of formatting rules. 
 
 For each dataset in the COAT Data Portal there are some mandatory requirements:
 
 - The datasets need to be associated to a **sampling protocol** (added as a link in metadata)
-- The dataset need to include a **coordinates file** with coordinates of all sampling sites in a standardized format.
+- The dataset need to include a **coordinates file** with coordinates of all sampling sites in a standardized format. Datasets where coordinates are included in the data files are exempt from this.
 
 Each dataset can also include optional additional information such as auxiliary or readme files.
-An example of a non-mandatory auxiliary file is a file containing a set of station-level variables measured at each plot/site/transect/quadrat.
-Typically, these variables would be such as terrain characteristics, habitat classes, land cover etc.
+An example of an auxiliary file for a time-series dataset is a file containing a set of variables measured only once at each plot/site/transect/quadrat. 
+Examples of such variables are terrain characteristics, habitat classes, land cover etc.
 Another example is a file defining the first and the last year when given sampling sites have been included in the study design.
 This is useful when the study design has changed over time.
 
@@ -23,8 +23,8 @@ tabular data
 Most of COATs data are in tabular format, stored in suitable text file formats (.txt/.csv/.asc).
 We divide tabular data into two types, and a generic format was defined for each of these two types:
 
-* *Plot-based data:* The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contain1-n variables measured on each of these individuals
-* *Individual-based data:* the sampling units are individuals not fixed in space (e.g. animals) and the data contain 1-n variables measured on each of these individuals.
+* *Plot-based data:* The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contains variables measured at each of these plots
+* *Individual-based data:* the sampling units are individuals not fixed in space (e.g. animals) and the data contains variables measured on each of these individuals.
 
 
 What is a dataset?
@@ -45,7 +45,7 @@ Or Y number of files containing measurements of the same variables in Y number o
 Dataset naming
 -------------------------------
 
-The name of a dataset (e.g. a collection of files, see above) should always
+The name of a dataset should always
 start with a **standardized prefix** indicating which region (Svalbard, Varanger)
 and which monitoring target they refer to.
 
@@ -58,7 +58,8 @@ the monitoring target arctic fox on Svalbard are given the prefix *‘\S_arcticf
 A data set from Varanger which describes the monitoring target forest and
 contains data on tree structure could hence be called *‘V_forest_treestructure’*
 or possibly *‘V_forest_treestructure_Polmak’* if there is a need to distinguish
-between this data set and another from a different region or design.
+between this data set and another from a different region or design. 
+Dataset names can also include study design type, for example *‘V_rodent_snap_trapping_intensive’* to distinguish it from *‘V_rodent_snap_trapping_regional’*. 
 
 Below is a complete list of monitoring targets (and prefixes).
 
@@ -214,6 +215,8 @@ A complete list of these and a definition for each can be found at
 Box/COAT/Data Management/Datatypes/Simple tables/Generic format data tables/Simple tables column definitions.xlsx(internal users only).
 The file also contains information on which standard columns should be included in all datasets.
 
+[Eeva: we could make an online open version of this complete list and definitions. I think it could help any external users of the data portal to understand the logic. Matteo, let me know what I can do to facilitate that.]
+
 Spelling and general text formatting in data files
 --------------------------------------------------------------
 
@@ -247,3 +250,11 @@ The list defines the spelling of all place names found at the top-four levels of
 Note that the names confirm to the general rules of
 text formatting (no capital letters, no Scandinavian letters etc). Anyone in need of the proper spelling
 (for instance for plotting purposes) can consult the sheet “correct spelling” in the same file.
+
+Species names in data files
+-------------------------------
+
+All species names and abbreviations should conform to the standard lists of species names
+found in Box/COAT/Data Management/Taxonomy (internal users only).
+The lists give Latin, English, and Norwegian names for species, genera and families that occure in the COAT data. 
+The lists also define abbreviations to be used in COAT data files.

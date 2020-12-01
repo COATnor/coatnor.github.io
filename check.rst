@@ -6,10 +6,11 @@ Quick check
 Before uploading a dataset to the COAT Data Portal, we suggest to perform a quick check
 of compliance to mandatory formatting requirements.
 
-This section aims at providing a synthetic checklist to help during datasets upload operations.
+This section provides a checklist for dataset uploading new datasets.
 For a full detailed description of the formatting rules please refer to the :ref:`data formatting section <formatting>`
 
-The data formatting rules are also included in the Data Management Plan of the COAT project.
+The data formatting rules are also included in the COAT Data Management Plan. 
+[Eeva: add link to DMP here?]
 
 1. Dataset requirements
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -21,21 +22,20 @@ The data formatting rules are also included in the Data Management Plan of the C
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 * All tabular files formatted as ";"-separated txt files
-* All column names should start with **sn_**, **sc_**, **t_** or **v_**
+* All column names should start with **sn_**, **sc_**, **t_** or **v_** for variables that are either spatially nested, spatially crossed, temporal, or other (i.e. data variables).
 * No empty cells - use NA
 * Only lower case (except NA)
 * Correct spelling of spatial names (according to COAT vocabulary for localities)
-* Date format: yyy-mm-dd
+* Date format: yyyy-mm-dd
 
 3. Sampling protocol
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* The protocol should be formatted using the template for COAT protocols available on BOX
+* The protocol should be formatted using the template for COAT protocols available on BOX folder COAT/Protocol/COAT Research protocol
 * A protocol need to be added to the portal before the datasets referring to it
 * A protocol will be saved as a PDF/A and the name should start with "\protocol_\"
 * A protocol is a special type of dataset in the data portal, and will be added with a similar procedure,
   with slightly different metadata
-* An example of a protocol can be found on BOX
 
 4. Coordinates file
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,16 +45,16 @@ The data formatting rules are also included in the Data Management Plan of the C
 * The file should include the coordinates of all dataset's sampling sites
 * Coordinates need to be provided both as geographical (decimal degrees) and UTM33 (easting and northing in meters)
 * The file should include the following columns: 'sn_site', 'e_dd', 'n_dd', 'e_utm33', 'n_utm33'
-* Find an example in BOX
+* Find an example in BOX folder COAT/Data management
 
 5. Auxiliary files
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Same formatting requirements
+* Same formatting requirements as for data files
 * The file can include further information about the sites included in the study design
 * For example the years when a site has been included in the study design
 * Another example: old site names
-* Example on BOX
+* Example on BOX folder COAT/Data management
 
 6. Readme file
 ^^^^^^^^^^^^^^^^^^^^^^^^

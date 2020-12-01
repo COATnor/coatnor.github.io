@@ -32,6 +32,7 @@ Edit metadata
 * **Title (mandatory):** should be identical to the dataset name (formatted according the :ref:`formatting rules <formatting>`). It should start with a conventional prefix (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
 * **Module (mandatory):** Select the module related to the dataset. The user need to be editor for the module.
 * **Description (mandatory):** Add a short description of the dataset. Here an example in Markdown format:
+[Eeva: there is no visible example in the description field image below]
 
 .. image:: _images/title.png
     :align: center
@@ -55,12 +56,14 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Contact Person (mandatory):** It is the name of the person responsible for the dataset. Coul be different from the person editing metadata. choosen from the list of registered users.
+* **Contact Person (mandatory):** It is the name of the person responsible for the dataset. Could be different from the person editing metadata. choosen from the list of registered users.
 * **Email Address:** of the contact person.
 * **Title of Position:** What is the professional role of the contact person?
 * **Organization Name (mandatory):** Which of the COAT partner Institutions is responsible for the dataset?
-* **Associated Parties:** Sometimes external institutions are involved. Not part of the Organization list above.
-* **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, etc.
+* **Associated Parties:** Additional institutions that are involved, either COAT parters or external institutions.
+[Eeva: I think we should put it here if additional COAT institutions are involved? Edited accordingly] 
+
+* **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, people who were in charge of the dataset previously etc.
 
 .. image:: _images/contacts.png
     :align: center
@@ -72,7 +75,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Geographic Location:** choose one or more locations related to the dataset collection. It is a hierarchical taxonomy of locations. From the location names bounding boxes are chosen, used also for geographical filtering of the datasets on the minimap.
+* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names. The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
 
 .. image:: _images/location.png
     :align: center
@@ -84,7 +87,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Associated Scripts:** A link to the repository with the scripts related to the dataset.
+* **Associated Scripts:** A link to the repository with publicly available scripts related to the dataset. Typically scripts that use the COAT raw data for calculating state variables.
 
 .. image:: _images/scripts.png
     :align: center
@@ -144,7 +147,7 @@ Private or public datasets
 
 When a dataset is created, it defaults to "private" status.
 A private dataset is not visible or accessible by unregistered or regular users.
-Only logged-in users which are members or editors of the module including the dataset can see it
+Only logged-in users who are members or editors of the module including the dataset can see it
 
 
 .. contents::
@@ -240,9 +243,9 @@ It is possible to pick specific versions of the datasets, and information about 
 Embargo management
 -------------------------------
 
-Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.
+Datasets with an embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.
 
-By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.
+By default COAT data follow an Open Data policy. It is however possibile to create datasets with a two-year embargo. This would typically be the case for a dataset where older data is set publicly available but the last two years data is only available for COAT users. In such case, only users with user or editor status in the relevant module can see the data.
 
 **Warning:** *the embargo management is a bit complex, please read carefully the details below:*
 
@@ -260,6 +263,7 @@ Let's see an example...
 Ola Nordmann is a data portal's editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
 Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
 No one will blame Ola Normann for this choice, even if everyone knows that keeping all the data public is the best.
+[Eeva: not sure if I get this right; do you mean that working on PhD is the only OK reason for embargo, or only 2 years is an OK embargo? We do have also other than PhD-project related datasets that will have 2 year embargo. This should be edited so that the meaning is more clearly "only 2 years of embargo is OK".]
 
 Here his workflow:
 
