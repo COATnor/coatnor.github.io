@@ -37,15 +37,15 @@
   <div class="section" id="data-formatting">
 <span id="formatting"></span><h1>Data formatting<a class="headerlink" href="#data-formatting" title="Permalink to this headline">¶</a></h1>
 <p>Before uploading to the COAT Data Portal,
-datasets need to be formatted according to formatting rules defined for the COAT project.</p>
+datasets need to be formatted according to a set of formatting rules.</p>
 <p>For each dataset in the COAT Data Portal there are some mandatory requirements:</p>
 <ul class="simple">
 <li><p>The datasets need to be associated to a <strong>sampling protocol</strong> (added as a link in metadata)</p></li>
-<li><p>The dataset need to include a <strong>coordinates file</strong> with coordinates of all sampling sites in a standardized format.</p></li>
+<li><p>The dataset need to include a <strong>coordinates file</strong> with coordinates of all sampling sites in a standardized format. Datasets where coordinates are included in the data files are exempt from this.</p></li>
 </ul>
 <p>Each dataset can also include optional additional information such as auxiliary or readme files.
-An example of a non-mandatory auxiliary file is a file containing a set of station-level variables measured at each plot/site/transect/quadrat.
-Typically, these variables would be such as terrain characteristics, habitat classes, land cover etc.
+An example of an auxiliary file for a time-series dataset is a file containing a set of variables measured only once at each plot/site/transect/quadrat.
+Examples of such variables are terrain characteristics, habitat classes, land cover etc.
 Another example is a file defining the first and the last year when given sampling sites have been included in the study design.
 This is useful when the study design has changed over time.</p>
 <div class="section" id="tabular-data">
@@ -53,8 +53,8 @@ This is useful when the study design has changed over time.</p>
 <p>Most of COATs data are in tabular format, stored in suitable text file formats (.txt/.csv/.asc).
 We divide tabular data into two types, and a generic format was defined for each of these two types:</p>
 <ul class="simple">
-<li><p><em>Plot-based data:</em> The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contain1-n variables measured on each of these individuals</p></li>
-<li><p><em>Individual-based data:</em> the sampling units are individuals not fixed in space (e.g. animals) and the data contain 1-n variables measured on each of these individuals.</p></li>
+<li><p><em>Plot-based data:</em> The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contains variables measured at each of these plots</p></li>
+<li><p><em>Individual-based data:</em> the sampling units are individuals not fixed in space (e.g. animals) and the data contains variables measured on each of these individuals.</p></li>
 </ul>
 </div>
 <div class="section" id="what-is-a-dataset">
@@ -70,7 +70,7 @@ Or Y number of files containing measurements of the same variables in Y number o
 </div>
 <div class="section" id="dataset-naming">
 <h2>Dataset naming<a class="headerlink" href="#dataset-naming" title="Permalink to this headline">¶</a></h2>
-<p>The name of a dataset (e.g. a collection of files, see above) should always
+<p>The name of a dataset should always
 start with a <strong>standardized prefix</strong> indicating which region (Svalbard, Varanger)
 and which monitoring target they refer to.</p>
 <p>After the prefix the data set owner can define a name that is informative of the content.</p>
@@ -80,7 +80,8 @@ the monitoring target arctic fox on Svalbard are given the prefix <em>‘S_arcti
 <p>A data set from Varanger which describes the monitoring target forest and
 contains data on tree structure could hence be called <em>‘V_forest_treestructure’</em>
 or possibly <em>‘V_forest_treestructure_Polmak’</em> if there is a need to distinguish
-between this data set and another from a different region or design.</p>
+between this data set and another from a different region or design.
+Dataset names can also include study design type, for example <em>‘V_rodent_snap_trapping_intensive’</em> to distinguish it from <em>‘V_rodent_snap_trapping_regional’</em>.</p>
 <p>Below is a complete list of monitoring targets (and prefixes).</p>
 <table class="docutils align-default">
 <colgroup>
@@ -208,7 +209,7 @@ Varanger</p></td>
 <td><p>Svalbard,
 Varanger</p></td>
 <td><p>Climatic</p></td>
-<td><p>_snowdepth_/V_snowdepth_</p></td>
+<td><p>S_snowdepth_/V_snowdepth_</p></td>
 </tr>
 <tr class="row-odd"><td><p>Snow structure</p></td>
 <td><p>Svalbard,
@@ -302,6 +303,7 @@ the temporal sampling and the most commonly used value columns.</p>
 <p>A complete list of these and a definition for each can be found at
 Box/COAT/Data Management/Datatypes/Simple tables/Generic format data tables/Simple tables column definitions.xlsx(internal users only).
 The file also contains information on which standard columns should be included in all datasets.</p>
+<p><strong>TODO: make an online open version of this complete list and definitions.</strong></p>
 </div>
 <div class="section" id="spelling-and-general-text-formatting-in-data-files">
 <h2>Spelling and general text formatting in data files<a class="headerlink" href="#spelling-and-general-text-formatting-in-data-files" title="Permalink to this headline">¶</a></h2>
@@ -331,6 +333,13 @@ The list defines the spelling of all place names found at the top-four levels of
 <p>Note that the names confirm to the general rules of
 text formatting (no capital letters, no Scandinavian letters etc). Anyone in need of the proper spelling
 (for instance for plotting purposes) can consult the sheet “correct spelling” in the same file.</p>
+</div>
+<div class="section" id="species-names-in-data-files">
+<h2>Species names in data files<a class="headerlink" href="#species-names-in-data-files" title="Permalink to this headline">¶</a></h2>
+<p>All species names and abbreviations should conform to the standard lists of species names
+found in Box/COAT/Data Management/Taxonomy (internal users only).
+The lists give Latin, English, and Norwegian names for species, genera and families that occur in the COAT data.
+The lists also define abbreviations to be used in COAT data files.</p>
 </div>
 </div>
 
@@ -369,6 +378,7 @@ text formatting (no capital letters, no Scandinavian letters etc). Anyone in nee
 <li class="toctree-l2"><a class="reference internal" href="#missing-data-in-files">Missing data in files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#date-formats-in-data-files">Date formats in data files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locality-names-in-data-files">Locality names in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#species-names-in-data-files">Species names in data files</a></li>
 </ul>
 </li>
 </ul>

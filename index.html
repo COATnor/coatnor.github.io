@@ -36,12 +36,12 @@
   <div class="section" id="coat-data-management">
 <h1>COAT Data Management<a class="headerlink" href="#coat-data-management" title="Permalink to this headline">¶</a></h1>
 <p>The <a class="reference external" href="https://data.coat.no">COAT Data Portal</a> is designed to share data collected and created following
-FAIR data principles in the frame of the COAT project. For more information about the COAT project and FAIR data principles
+FAIR data principles in the frame of the Climate-ecological Observatory for Arctic Tundra (COAT). For more information about COAT and FAIR data principles
 refer to the <a class="reference internal" href="about.html#about"><span class="std std-ref">about section</span></a></p>
 <img alt="_images/dataportal_homepage_screenshot.png" src="_images/dataportal_homepage_screenshot.png" />
 <div class="section" id="datasets">
 <h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h2>
-<p>Data in the portal is grouped in functional units called <em>datasets</em>.</p>
+<p>Data in the COAT data portal is grouped in units called <em>datasets</em>.</p>
 <p>In the context of the COAT data management,</p>
 <p>a <strong>dataset</strong>:</p>
 <ul class="simple">
@@ -54,24 +54,23 @@ refer to the <a class="reference internal" href="about.html#about"><span class="
 <li><p>once published, is considered permanently available</p></li>
 <li><p>can have multiple versions</p></li>
 <li><p>can include additional non-data files (readme, coordinates, auxiliary)</p></li>
-<li><p>is formatted according to mandatory rules</p></li>
+<li><p>is formatted according to a specific set of guidelines</p></li>
 </ul>
 <p><em>For additional information about DOIs, see</em> <a class="reference external" href="https://datacite.org/dois.html">datacite documentation</a></p>
 </div>
 <div class="section" id="types-of-datasets">
 <h2>Types of datasets<a class="headerlink" href="#types-of-datasets" title="Permalink to this headline">¶</a></h2>
-<p>The COAT Data Portal provide a separate management for 3 types of datasets, each accessed from a different TAB of the portal:</p>
+<p>The COAT Data Portal has 3 types of datasets, each accessed from a different TAB of the portal:</p>
 <ul class="simple">
-<li><p>Collected <strong>datasets</strong> (input for State Variables)</p></li>
-<li><p><strong>State Variables</strong> (Derived datasets, scientific focus of the COAT project)</p></li>
+<li><p>Collected <strong>datasets</strong> (input for State Variables, raw data compliant to COAT formats)</p></li>
+<li><p><strong>State Variables</strong> (Derived datasets for assessing state of COAT monitoring targets)</p></li>
 <li><p>Data sampling <strong>protocols</strong> (describing the study design behind data collection)</p></li>
 </ul>
 <img alt="_images/tabs.png" src="_images/tabs.png" />
 </div>
 <div class="section" id="modules">
 <h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
-<p>Datasets are additionally grouped in Modules focused on the different monitoring targets of the
-COAT project activities.</p>
+<p>Datasets are additionally grouped in Modules, according to the food web module structure of COAT.</p>
 <p>The modules are separated data compartments, and users need to be module editors
 to be able to upload datasets to a specific module.</p>
 <p>Modules are also a filtering category when searching for data.</p>
@@ -81,9 +80,9 @@ to be able to upload datasets to a specific module.</p>
 <h2>Before uploading datasets<a class="headerlink" href="#before-uploading-datasets" title="Permalink to this headline">¶</a></h2>
 <p>To be ready for data upload, dataset files need to be formatted according to mandatory formatting rules.
 Find more details in the <a class="reference internal" href="formatting.html#formatting"><span class="std std-ref">data formatting section</span></a></p>
-<p>Moreover, before uploading a dataset a user need to check that the corresponding protocol is already uploaded in the system.
+<p>Before uploading a dataset a user needs to check that the corresponding protocol is already uploaded in the system.
 If not yet available, the first operation is to upload a protocol. See more details in the <a class="reference internal" href="protocol.html#protocol"><span class="std std-ref">protocol uploading section</span></a></p>
-<p>To help performing all the required steps before data upload, the <a class="reference internal" href="check.html#check"><span class="std std-ref">quick check section</span></a> helps to make sure that everything is compliant</p>
+<p>To help performing all the required steps before data upload, the <a class="reference internal" href="check.html#check"><span class="std std-ref">quick check section</span></a> helps to make sure that everything is ready for upload.</p>
 </div>
 <div class="section" id="uploading-datasets">
 <h2>Uploading datasets<a class="headerlink" href="#uploading-datasets" title="Permalink to this headline">¶</a></h2>
@@ -94,13 +93,19 @@ If not yet available, the first operation is to upload a protocol. See more deta
 <li><p>then can add all the data files, following a specific order.</p></li>
 <li><p>data files can be added manually using the Graphic Interface, or by command line or scripting using the data API.</p></li>
 </ul>
-<p><em>More details in the</em> <a class="reference internal" href="data.html#data"><span class="std std-ref">data upload section</span></a></p>
+<p>More details in the <a class="reference internal" href="data.html#data"><span class="std std-ref">data upload section</span></a></p>
 <p>During upload procedures the dataset will be still in private mode. Once the dataset is uploaded it can be published.
-Publishing means creating a DOI for the dataset, and this step means making the dataset permanent,
+Publishing means creating a DOI for the dataset. This means making the dataset permanent,
 with the obligation of being always available, findable and accessible. If any modification needed,
 it will be solved by creating a new version of the dataset.</p>
-<p>datatasets can additionally be set in embargo mode, to keep private the most recent data files (up to 2 years).
+<p>Datatasets can be set in an embargo mode, to keep private the most recent data files (up to 2 years).
 See details in the <a class="reference internal" href="data.html#embargo"><span class="std std-ref">embargo description</span></a></p>
+</div>
+<div class="section" id="uploading-data-to-existing-dataset">
+<h2>Uploading data to existing dataset<a class="headerlink" href="#uploading-data-to-existing-dataset" title="Permalink to this headline">¶</a></h2>
+<p>New data can be added to an existing dataset, for example to add one more year of monitoring data.
+To upload new data to an existing dataset, a user needs to create a new version of an existing dataset.</p>
+<p>More details in the “Updating dataset” section of <a class="reference internal" href="data.html#updating"><span class="std std-ref">data upload section</span></a></p>
 <div class="section" id="about">
 <h3>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
@@ -144,6 +149,7 @@ See details in the <a class="reference internal" href="data.html#embargo"><span 
 <li class="toctree-l2"><a class="reference internal" href="formatting.html#missing-data-in-files">Missing data in files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formatting.html#date-formats-in-data-files">Date formats in data files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formatting.html#locality-names-in-data-files">Locality names in data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatting.html#species-names-in-data-files">Species names in data files</a></li>
 </ul>
 </li>
 </ul>
@@ -182,9 +188,10 @@ See details in the <a class="reference internal" href="data.html#embargo"><span 
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="data.html#check-for-protocol">Check for protocol</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data.html#upload-a-dataset">Upload a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#create-a-dataset">Create a dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html#edit-metadata">Edit metadata</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html#data-files-upload-order">Data files upload order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#data-upload-alternatives">Data upload alternatives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html#private-or-public-datasets">Private or public datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html#publishing-the-dataset">Publishing the dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html#dataset-versions">Dataset Versions</a></li>

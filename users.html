@@ -37,46 +37,52 @@
   <div class="section" id="user-types">
 <span id="users"></span><h1>User types<a class="headerlink" href="#user-types" title="Permalink to this headline">¶</a></h1>
 <p>COAT researchers and data managers can login to the Data Portal using their FEIDE account.
-There are different roles which can be assigned to users</p>
+External users cannot log into the data portal, and can only see those parts of public datasets that are not behind embargo.
+There are different roles which can be assigned to COAT users</p>
 <ul class="simple">
 <li><p>regular users</p></li>
 <li><p>members of a module</p></li>
 <li><p>editors of a module</p></li>
 <li><p>administrators</p></li>
 </ul>
-<p>To be registered in the Data Portal Users need to login once, then they will be available in the system.
-After being registered, users can be added to modules (by administrators or module editors),
-or selected in metadata from the users controlled vocabulary</p>
+<p>To be registered in the Data Portal, users need to login once.
+After the first login, users can be added to modules (by administrators or module editors).</p>
 <div class="section" id="login-with-feide">
 <h2>Login with Feide<a class="headerlink" href="#login-with-feide" title="Permalink to this headline">¶</a></h2>
-<p>To create a user in the Data Portal you need to login fo the first time using FEIDE.</p>
+<p>To create a user in the Data Portal you need to login fo the first time using FEIDE. [Eeva: add info what to do when one does not have Feide, this is the case for e.g. NPI]</p>
 <img alt="_images/feide.png" src="_images/feide.png" />
+<p>If your institution is not available in Feide, you have to login using a Feide guest account:</p>
+<img alt="_images/feide_guest.png" src="_images/feide_guest.png" />
+<p>And create an OpnIdP account:</p>
+<img alt="_images/openidp.png" src="_images/openidp.png" />
 </div>
 <div class="section" id="regular-users">
 <h2>Regular Users<a class="headerlink" href="#regular-users" title="Permalink to this headline">¶</a></h2>
-<p>Regular users are users which logged in to the system at least once. A regualr user is listed as a possible choice in the metadata dropdown list for selecting the owner of a dataset.
-A regular user can receive authorizations, and be upgraded to editor of one or more modules or administrator of the portal.
+<p>Regular users are users who logged in to the system at least once.
+A regular user is listed as a possible choice in the metadata dropdown list for selecting the owner of a dataset.
+A regular user can be upgraded to member or editor of one or more modules.
 A regular user has no authorizations in the Data Portal,
 and can visualize the same things that a not-logged in user can:</p>
 <ul class="simple">
-<li><p>See only public datasets</p></li>
+<li><p>See only the parts of public datasets that are not behind embargo</p></li>
 <li><p>Can’t see private datasets</p></li>
 <li><p>Can’t create new datasets</p></li>
 </ul>
 </div>
 <div class="section" id="members-of-a-module">
 <h2>Members of a Module<a class="headerlink" href="#members-of-a-module" title="Permalink to this headline">¶</a></h2>
-<p>A user can be member of multiple Modules
-Members of a Module:</p>
+<p>A user can be member of multiple Modules</p>
+<p>Members of a Module:</p>
 <ul class="simple">
 <li><p>Can’t create new datasets</p></li>
-<li><p>Can visualize private datasets of a Module</p></li>
+<li><p>Can see private datasets of a Module</p></li>
+<li><p>Can see behind-embargo data of a Module</p></li>
 </ul>
 </div>
 <div class="section" id="editors-of-a-module">
 <h2>Editors of a Module<a class="headerlink" href="#editors-of-a-module" title="Permalink to this headline">¶</a></h2>
-<p>A user can be editor of multiple Modules
-Editors of a Module:</p>
+<p>A user can be editor of multiple Modules</p>
+<p>Editors of a Module:</p>
 <ul class="simple">
 <li><p>Can add members to a Module</p></li>
 <li><p>Can create datasets for a specific Module</p></li>
@@ -130,6 +136,9 @@ Editors of a Module:</p>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data upload</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download.html">Data download</a></li>
 </ul>
 
 <div class="relations">

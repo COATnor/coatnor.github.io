@@ -41,8 +41,8 @@
 <p><strong>Warning:</strong> Before uploading a dataset you have to be sure that the related protocol is already in the portal.
 If it’s not yet available, follow the instruction for <a class="reference internal" href="protocol.html#protocol"><span class="std std-ref">protocol upload</span></a></p>
 </div>
-<div class="section" id="upload-a-dataset">
-<h2>Upload a dataset<a class="headerlink" href="#upload-a-dataset" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-a-dataset">
+<h2>Create a dataset<a class="headerlink" href="#create-a-dataset" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Login with a user with editor role for the module the dataset belongs to</p></li>
 <li><p>Go to Datasets and select “Add Dataset” (if not visible, you are not authorized: contact the module leader)</p></li>
@@ -53,11 +53,14 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <h2>Edit metadata<a class="headerlink" href="#edit-metadata" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The first operation required to add a new dataset to the portal is editing the metadata:</p></li>
+</ul>
+<img alt="_images/title.png" class="align-center" src="_images/title.png" />
+<ul class="simple">
 <li><p><strong>Title (mandatory):</strong> should be identical to the dataset name (formatted according the <a class="reference internal" href="formatting.html#formatting"><span class="std std-ref">formatting rules</span></a>). It should start with a conventional prefix (starting with V_ for datasets from Varanger and S_ for datasets from Svalbard)</p></li>
 <li><p><strong>Module (mandatory):</strong> Select the module related to the dataset. The user need to be editor for the module.</p></li>
 <li><p><strong>Description (mandatory):</strong> Add a short description of the dataset. Here an example in Markdown format:</p></li>
 </ul>
-<img alt="_images/title.png" class="align-center" src="_images/title.png" />
+<img alt="_images/description_markdown.png" class="align-center" src="_images/description_markdown.png" />
 <ul class="simple">
 <li><p><strong>Tags:</strong> Choose a list of keywords from a controlled vocabulary</p></li>
 <li><p><strong>Topic Category Code:</strong> This is a general category for classifying data, following a commonly used standard in data repositories</p></li>
@@ -72,12 +75,21 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 </ul>
 <a class="reference internal image-reference" href="_images/license.png"><img alt="_images/license.png" class="align-center" src="_images/license.png" style="width: 92%;" /></a>
 <ul class="simple">
-<li><p><strong>Contact Person (mandatory):</strong> It is the name of the person responsible for the dataset. Coul be different from the person editing metadata. choosen from the list of registered users.</p></li>
+<li><p><strong>Contact Person (mandatory):</strong> It is the name of the person responsible for the dataset. Could be different from the person editing metadata. choosen from the list of registered users.</p></li>
 <li><p><strong>Email Address:</strong> of the contact person.</p></li>
 <li><p><strong>Title of Position:</strong> What is the professional role of the contact person?</p></li>
 <li><p><strong>Organization Name (mandatory):</strong> Which of the COAT partner Institutions is responsible for the dataset?</p></li>
-<li><p><strong>Associated Parties:</strong> Sometimes external institutions are involved. Not part of the Organization list above.</p></li>
-<li><p><strong>Persons:</strong> Are there other key people related to the dataset? Ex: Field Technicians, PhD students, etc.</p></li>
+<li><p><strong>Associated Parties:</strong> Additional institutions that are involved, either COAT partners or external institutions:</p>
+<ol class="arabic simple">
+<li><p>UiT - The Arctic University of Norway</p></li>
+<li><p>NPI - Norwegian Polar Institute</p></li>
+<li><p>NINA - Norwegian Institute for Nature Research</p></li>
+<li><p>MET - Norwegian Meteorological institute</p></li>
+<li><p>UNIS - University Centre on Svalbard</p></li>
+<li><p>AU - University of Aarhus</p></li>
+</ol>
+</li>
+<li><p><strong>Persons:</strong> Are there other key people related to the dataset? Ex: Field Technicians, PhD students, people who were in charge of the dataset previously etc.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/contacts.png"><img alt="_images/contacts.png" class="align-center" src="_images/contacts.png" style="width: 92%;" /></a>
 <ul class="simple">
@@ -85,7 +97,7 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 </ul>
 <a class="reference internal image-reference" href="_images/temporal.png"><img alt="_images/temporal.png" class="align-center" src="_images/temporal.png" style="width: 92%;" /></a>
 <ul class="simple">
-<li><p><strong>Geographic Location:</strong> choose one or more locations related to the dataset collection. It is a hierarchical taxonomy of locations. From the location names bounding boxes are chosen, used also for geographical filtering of the datasets on the minimap.</p></li>
+<li><p><strong>Geographic Location:</strong> choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names. The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/location.png"><img alt="_images/location.png" class="align-center" src="_images/location.png" style="width: 92%;" /></a>
 <ul class="simple">
@@ -93,7 +105,7 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 </ul>
 <a class="reference internal image-reference" href="_images/scientific.png"><img alt="_images/scientific.png" class="align-center" src="_images/scientific.png" style="width: 92%;" /></a>
 <ul class="simple">
-<li><p><strong>Associated Scripts:</strong> A link to the repository with the scripts related to the dataset.</p></li>
+<li><p><strong>Associated Scripts:</strong> A link to the repository with publicly available scripts related to the dataset. Typically scripts that use the COAT raw data for calculating state variables.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/scripts.png"><img alt="_images/scripts.png" class="align-center" src="_images/scripts.png" style="width: 92%;" /></a>
 <ul class="simple">
@@ -113,7 +125,7 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 </ul>
 <a class="reference internal image-reference" href="_images/next.png"><img alt="_images/next.png" class="align-center" src="_images/next.png" style="width: 92%;" /></a>
 <ul class="simple">
-<li><p>Upload all the data file in the following order, add a filename (best to keep the file’s name by click on “Fill field with filename or URL”) and choose the correct file format</p></li>
+<li><p>Upload all the data files in the order described below, add a filename (best to keep the file’s name by click on “Fill field with filename or URL”) and choose the correct file format</p></li>
 </ul>
 <p><a class="reference internal" href="#data"><span class="std std-ref">go back to top of the page</span></a></p>
 </div>
@@ -126,11 +138,18 @@ If it’s not yet available, follow the instruction for <a class="reference inte
 <li><p>Upload all <strong>data files</strong> in chronological order (from older to newer)</p></li>
 </ol>
 </div>
+<div class="section" id="data-upload-alternatives">
+<h2>Data upload alternatives<a class="headerlink" href="#data-upload-alternatives" title="Permalink to this headline">¶</a></h2>
+<p>Data files can be uploaded one by one using the data portal graphic interface, as described above. However,
+in case of the upload of many data files, it could be convenient to use the data portal’s API and data upload scripts.</p>
+<p>Please refer to the github repository containing data management scripts:</p>
+<p><a class="reference external" href="https://github.com/COATnor/data_management_scripts">github - data management scripts</a></p>
+</div>
 <div class="section" id="private-or-public-datasets">
 <h2>Private or public datasets<a class="headerlink" href="#private-or-public-datasets" title="Permalink to this headline">¶</a></h2>
 <p>When a dataset is created, it defaults to “private” status.
 A private dataset is not visible or accessible by unregistered or regular users.
-Only logged-in users which are members or editors of the module including the dataset can see it</p>
+Only logged-in users who are members or editors of the module including the dataset can see it</p>
 </div>
 <div class="section" id="publishing-the-dataset">
 <h2>Publishing the dataset<a class="headerlink" href="#publishing-the-dataset" title="Permalink to this headline">¶</a></h2>
@@ -157,7 +176,7 @@ Whenever visualizing an older version of a dataset, a friendly reminder will inf
 <p><a class="reference internal" href="#data"><span class="std std-ref">go back to top of the page</span></a></p>
 </div>
 <div class="section" id="updating-a-dataset">
-<h2>Updating a dataset<a class="headerlink" href="#updating-a-dataset" title="Permalink to this headline">¶</a></h2>
+<span id="updating"></span><h2>Updating a dataset<a class="headerlink" href="#updating-a-dataset" title="Permalink to this headline">¶</a></h2>
 <p>After creating a <strong>new version</strong> of a dataset, which is identical to the previous version at the moment of creation,
 a user should modify the dataset to add data files or modify metadata.</p>
 <p>For both operations a user needs to click on the “Manage” button (top right) of the dataset page:</p>
@@ -182,8 +201,8 @@ Specifically, while adding a new State Variable, a user selects a list of associ
 </div>
 <div class="section" id="embargo-management">
 <span id="embargo"></span><h2>Embargo management<a class="headerlink" href="#embargo-management" title="Permalink to this headline">¶</a></h2>
-<p>Datasets in embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
-<p>By default COAT data follow an Open Data policy. There is however the possibility to set an embargo for data files up to 2 years old.</p>
+<p>Datasets with an embargo follow a particular setup, which guarantees availability of older data contents and protection of more recent ones.</p>
+<p>By default COAT data follow an Open Data policy. It is however possibile to create datasets with a two-year embargo. This would typically be the case for a dataset where older data is set publicly available but the last two years data is only available for COAT users. In such case, only users with user or editor status in the relevant module can see the data.</p>
 <p><strong>Warning:</strong> <em>the embargo management is a bit complex, please read carefully the details below:</em></p>
 <p>When a dataset contains <strong>data files</strong> which should be kept in embargo (not reachable),
 there is a specific workflow to follow, which implies the use of <strong>dataset versions</strong>.
@@ -194,8 +213,8 @@ A dataset version in embargo will keep <strong>all the data files</strong> inacc
 Non-authorized users will be informed that a dataset is under embargo, and need to look for a previous version (the one with non-embargoed data files)</p>
 <p>Let’s see an example…</p>
 <p>Ola Nordmann is a data portal’s editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
-Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
-No one will blame Ola Normann for this choice, even if everyone knows that keeping all the data public is the best.</p>
+He opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
+Please consider that keeping all the data public is the best choice, whenever possible, and often a mandatory requirement from public research funders.</p>
 <p>Here his workflow:</p>
 <ul class="simple">
 <li><p>Ola creates the first dataset version, which contains only data which can be public (from year 2000 to year 2018), and calls it “sample_dataset”.</p></li>
@@ -250,9 +269,10 @@ No one will blame Ola Normann for this choice, even if everyone knows that keepi
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data upload</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#check-for-protocol">Check for protocol</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#upload-a-dataset">Upload a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-dataset">Create a dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#edit-metadata">Edit metadata</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-files-upload-order">Data files upload order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-upload-alternatives">Data upload alternatives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#private-or-public-datasets">Private or public datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-the-dataset">Publishing the dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dataset-versions">Dataset Versions</a></li>
