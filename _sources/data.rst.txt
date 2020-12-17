@@ -84,7 +84,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names. The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
+* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names (all upper locations will be added automatically). The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
 
 .. image:: _images/location.png
     :align: center
@@ -146,6 +146,8 @@ Data files upload order
 #. Upload the **coordinates** file. A description can be added, for example: "Coordinates of all sites included in the dataset"
 
 #. Upload all **data files** in chronological order (from older to newer)
+
+**Note:** *It is also possible to change the file order in a second moment*
 
 .. contents::
     :depth: 2

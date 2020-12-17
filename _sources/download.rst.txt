@@ -19,7 +19,7 @@ We suggest to choose the bulk download from the API using a script (see below)*
 Download single data file
 ------------------------------------------
 
-To download a single data file, click on the**Explore** button on the right of a data, and then dwonalod,
+To download a single data file, click on the**Explore** button on the right of a data, and then download,
 from the dataset detailed view:
 
 .. image:: _images/single_download.png
@@ -27,6 +27,9 @@ from the dataset detailed view:
 As an alternative, it is possible to download a file from its detailed view:
 
 .. image:: _images/resource_download.png
+
+**Warning:** *After requesting a single dataset download, in case of a txt file, instead of triggering a file download the dataset could be visualised in the browser itself as a web page content:
+in such a case, just press the right mouse button, and choose to download the content as txt.*
 
 Download using the API
 ------------------------------------------
