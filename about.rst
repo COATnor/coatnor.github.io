@@ -29,6 +29,5 @@ stored in suitable code repositories.
 Data Management Plan
 --------------------------------
 
-**TODO: link to DMP? More content here?** 
-[Eeva: yes it is good to have link to DMP here]
-
+The details about data management poicies and implementations can be found in the
+`COAT Data Management Plan <https://data.coat.no/dataset/coat-data-management-plan_v1/resource/cfc7651f-b8a6-48f9-aba8-665fdb0beed7>`_

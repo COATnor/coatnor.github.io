@@ -9,8 +9,8 @@ of compliance to mandatory formatting requirements.
 This section provides a checklist for dataset uploading new datasets.
 For a full detailed description of the formatting rules please refer to the :ref:`data formatting section <formatting>`
 
-The data formatting rules are also included in the COAT Data Management Plan. 
-[Eeva: add link to DMP here?]
+The data formatting rules are also included in the
+`COAT Data Management Plan <https://data.coat.no/dataset/coat-data-management-plan_v1/resource/cfc7651f-b8a6-48f9-aba8-665fdb0beed7>`_.
 
 1. Dataset requirements
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,7 +31,7 @@ The data formatting rules are also included in the COAT Data Management Plan.
 3. Sampling protocol
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* The protocol should be formatted using the template for COAT protocols available on BOX folder COAT/Protocol/COAT Research protocol
+* The protocol should be formatted using the template for COAT protocols available on BOX folder *COAT/Protocol/COAT Research protocol*
 * A protocol need to be added to the portal before the datasets referring to it
 * A protocol will be saved as a PDF/A and the name should start with "\protocol_\"
 * A protocol is a special type of dataset in the data portal, and will be added with a similar procedure,
@@ -45,7 +45,7 @@ The data formatting rules are also included in the COAT Data Management Plan.
 * The file should include the coordinates of all dataset's sampling sites
 * Coordinates need to be provided both as geographical (decimal degrees) and UTM33 (easting and northing in meters)
 * The file should include the following columns: 'sn_site', 'e_dd', 'n_dd', 'e_utm33', 'n_utm33'
-* Find an example in BOX folder COAT/Data management
+* Find an example in BOX folder *COAT/Data management*
 
 5. Auxiliary files
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,7 +54,7 @@ The data formatting rules are also included in the COAT Data Management Plan.
 * The file can include further information about the sites included in the study design
 * For example the years when a site has been included in the study design
 * Another example: old site names
-* Example on BOX folder COAT/Data management
+* Example on BOX folder *COAT/Data management*
 
 6. Readme file
 ^^^^^^^^^^^^^^^^^^^^^^^^

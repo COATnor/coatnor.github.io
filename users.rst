@@ -23,6 +23,15 @@ To create a user in the Data Portal you need to login fo the first time using FE
 
 .. image:: _images/feide.png
 
+If your institution is not available in Feide, you have to login using a Feide guest account:
+
+.. image:: _images/feide_guest.png
+
+And create an OpnIdP account:
+
+.. image:: _images/openidp.png
+
+
 Regular Users
 -------------------------------------------
 
@@ -39,7 +48,8 @@ and can visualize the same things that a not-logged in user can:
 Members of a Module
 -------------------------------------------
 
-A user can be member of multiple Modules [Eeva: add line break here]
+A user can be member of multiple Modules
+
 Members of a Module:
 
 * Can't create new datasets
@@ -49,7 +59,8 @@ Members of a Module:
 Editors of a Module
 -------------------------------------------
 
-A user can be editor of multiple Modules [Eeva: add line break here]
+A user can be editor of multiple Modules
+
 Editors of a Module:
 
 * Can add members to a Module

@@ -41,7 +41,7 @@ __________________________________________
 
 The COAT Data Portal has 3 types of datasets, each accessed from a different TAB of the portal:
 
-* Collected **datasets** (input for State Variables, raw data complient to COAT formats)
+* Collected **datasets** (input for State Variables, raw data compliant to COAT formats)
 * **State Variables** (Derived datasets for assessing state of COAT monitoring targets)
 * Data sampling **protocols** (describing the study design behind data collection)
 
@@ -50,7 +50,7 @@ The COAT Data Portal has 3 types of datasets, each accessed from a different TAB
 Modules
 __________________________________________
 
-Datasets are additionally grouped in Modules, accoring to the food web module structure of COAT. 
+Datasets are additionally grouped in Modules, according to the food web module structure of COAT.
 
 The modules are separated data compartments, and users need to be module editors
 to be able to upload datasets to a specific module.
@@ -96,8 +96,7 @@ __________________________________________
 New data can be added to an existing dataset, for example to add one more year of monitoring data.
 To upload new data to an existing dataset, a user needs to create a new version of an existing dataset. 
 
-More details in the "Updating dataset" section of :ref:`data upload section <data>`
-[Eeva: dont think I got this quite right, Matteo pleas format so it goes here: https://coatnor.github.io/data.html#updating-a-dataset]
+More details in the "Updating dataset" section of :ref:`data upload section <updating>`
 
 About
 ============================================

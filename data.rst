@@ -15,7 +15,7 @@ If it's not yet available, follow the instruction for :ref:`protocol upload <pro
     :depth: 2
     :local:
 
-Upload a dataset
+Create a dataset
 -------------------------------
 
 * Login with a user with editor role for the module the dataset belongs to
@@ -29,12 +29,15 @@ Edit metadata
 -------------------------------
 
 * The first operation required to add a new dataset to the portal is editing the metadata:
+
+.. image:: _images/title.png
+    :align: center
+
 * **Title (mandatory):** should be identical to the dataset name (formatted according the :ref:`formatting rules <formatting>`). It should start with a conventional prefix (starting with \V_ \ for datasets from Varanger and \S_ \ for datasets from Svalbard)
 * **Module (mandatory):** Select the module related to the dataset. The user need to be editor for the module.
 * **Description (mandatory):** Add a short description of the dataset. Here an example in Markdown format:
-[Eeva: there is no visible example in the description field image below]
 
-.. image:: _images/title.png
+.. image:: _images/description_markdown.png
     :align: center
 
 * **Tags:** Choose a list of keywords from a controlled vocabulary
@@ -60,8 +63,14 @@ Edit metadata
 * **Email Address:** of the contact person.
 * **Title of Position:** What is the professional role of the contact person?
 * **Organization Name (mandatory):** Which of the COAT partner Institutions is responsible for the dataset?
-* **Associated Parties:** Additional institutions that are involved, either COAT parters or external institutions.
-[Eeva: I think we should put it here if additional COAT institutions are involved? Edited accordingly] 
+* **Associated Parties:** Additional institutions that are involved, either COAT partners or external institutions:
+
+  #. UiT - The Arctic University of Norway
+  #. NPI - Norwegian Polar Institute
+  #. NINA - Norwegian Institute for Nature Research
+  #. MET - Norwegian Meteorological institute
+  #. UNIS - University Centre on Svalbard
+  #. AU - University of Aarhus
 
 * **Persons:** Are there other key people related to the dataset? Ex: Field Technicians, PhD students, people who were in charge of the dataset previously etc.
 
@@ -75,7 +84,7 @@ Edit metadata
     :align: center
     :width: 92%
 
-* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names. The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
+* **Geographic Location:** choose one or more locations related to the dataset collection. The taxonomy is hierarchical, so you only need to choose the most detailed location names (all upper locations will be added automatically). The location names are used to create a bounding box, used also for geographical filtering of the datasets on the minimap.
 
 .. image:: _images/location.png
     :align: center
@@ -119,7 +128,7 @@ Edit metadata
     :width: 92%
 
 
-* Upload all the data file in the following order, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
+* Upload all the data files in the order described below, add a filename (best to keep the file's name by click on "Fill field with filename or URL") and choose the correct file format
 
 :ref:`go back to top of the page <data>`
 
@@ -138,9 +147,21 @@ Data files upload order
 
 #. Upload all **data files** in chronological order (from older to newer)
 
+**Note:** *It is also possible to change the file order in a second moment*
+
 .. contents::
     :depth: 2
     :local:
+
+Data upload alternatives
+-------------------------------
+
+Data files can be uploaded one by one using the data portal graphic interface, as described above. However,
+in case of the upload of many data files, it could be convenient to use the data portal's API and data upload scripts.
+
+Please refer to the github repository containing data management scripts:
+
+`github - data management scripts <https://github.com/COATnor/data_management_scripts>`_
 
 Private or public datasets
 -------------------------------
@@ -202,6 +223,8 @@ When accessing to a dataset's main page, it will always show **the latest public
     :depth: 2
     :local:
 
+.. _updating:
+
 Updating a dataset
 -------------------------------
 
@@ -261,9 +284,8 @@ Non-authorized users will be informed that a dataset is under embargo, and need 
 Let's see an example...
 
 Ola Nordmann is a data portal's editor. On January 1st 2021 he decides to upload a new dataset containing one data file per year (from 2000 to 2020).
-Since he is working on a PhD thesis, he opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
-No one will blame Ola Normann for this choice, even if everyone knows that keeping all the data public is the best.
-[Eeva: not sure if I get this right; do you mean that working on PhD is the only OK reason for embargo, or only 2 years is an OK embargo? We do have also other than PhD-project related datasets that will have 2 year embargo. This should be edited so that the meaning is more clearly "only 2 years of embargo is OK".]
+He opts for keeping the latest 2 years of data in embargo (the only eligible for such exception).
+Please consider that keeping all the data public is the best choice, whenever possible, and often a mandatory requirement from public research funders.
 
 Here his workflow:
 

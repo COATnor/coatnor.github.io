@@ -113,7 +113,7 @@ Below is a complete list of monitoring targets (and prefixes).
 | Timing of snow melt  | Svalbard,|          | \S_timing_snowmelt_\/\V_timing_snowmelt_\|
 |                      | Varanger | Climatic |                                          |
 +----------------------+----------+----------+------------------------------------------+
-| Snow depth           | Svalbard,| Climatic | \_snowdepth_\/\V_snowdepth_\             |
+| Snow depth           | Svalbard,| Climatic | \S_snowdepth_\/\V_snowdepth_\            |
 |                      | Varanger |          |                                          |
 +----------------------+----------+----------+------------------------------------------+
 | Snow structure       | Svalbard,| Climatic | \S_snowstructure_\/\V_snowstructure_\    |
@@ -215,7 +215,7 @@ A complete list of these and a definition for each can be found at
 Box/COAT/Data Management/Datatypes/Simple tables/Generic format data tables/Simple tables column definitions.xlsx(internal users only).
 The file also contains information on which standard columns should be included in all datasets.
 
-[Eeva: we could make an online open version of this complete list and definitions. I think it could help any external users of the data portal to understand the logic. Matteo, let me know what I can do to facilitate that.]
+**TODO: make an online open version of this complete list and definitions.**
 
 Spelling and general text formatting in data files
 --------------------------------------------------------------
@@ -256,5 +256,5 @@ Species names in data files
 
 All species names and abbreviations should conform to the standard lists of species names
 found in Box/COAT/Data Management/Taxonomy (internal users only).
-The lists give Latin, English, and Norwegian names for species, genera and families that occure in the COAT data. 
+The lists give Latin, English, and Norwegian names for species, genera and families that occur in the COAT data.
 The lists also define abbreviations to be used in COAT data files.
