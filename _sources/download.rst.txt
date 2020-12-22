@@ -19,7 +19,7 @@ We suggest to choose the bulk download from the API using a script (see below)*
 Download single data file
 ------------------------------------------
 
-To download a single data file, click on the**Explore** button on the right of a data, and then download,
+To download a single data file, click on the **Explore** button on the right of a data, and then download,
 from the dataset detailed view:
 
 .. image:: _images/single_download.png
