@@ -4,15 +4,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Data formatting &#8212; COAT Data Portal 0.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,7 +34,7 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="data-formatting">
+  <section id="data-formatting">
 <span id="formatting"></span><h1>Data formatting<a class="headerlink" href="#data-formatting" title="Permalink to this headline">¶</a></h1>
 <p>Before uploading to the COAT Data Portal,
 datasets need to be formatted according to a set of formatting rules.</p>
@@ -48,7 +48,7 @@ An example of an auxiliary file for a time-series dataset is a file containing a
 Examples of such variables are terrain characteristics, habitat classes, land cover etc.
 Another example is a file defining the first and the last year when given sampling sites have been included in the study design.
 This is useful when the study design has changed over time.</p>
-<div class="section" id="tabular-data">
+<section id="tabular-data">
 <h2>tabular data<a class="headerlink" href="#tabular-data" title="Permalink to this headline">¶</a></h2>
 <p>Most of COATs data are in tabular format, stored in suitable text file formats (.txt/.csv/.asc).
 We divide tabular data into two types, and a generic format was defined for each of these two types:</p>
@@ -56,8 +56,8 @@ We divide tabular data into two types, and a generic format was defined for each
 <li><p><em>Plot-based data:</em> The sampling units are fixed in space (e.g. a plot, quadrat, transect, etc.) and the data contains variables measured at each of these plots</p></li>
 <li><p><em>Individual-based data:</em> the sampling units are individuals not fixed in space (e.g. animals) and the data contains variables measured on each of these individuals.</p></li>
 </ul>
-</div>
-<div class="section" id="what-is-a-dataset">
+</section>
+<section id="what-is-a-dataset">
 <h2>What is a dataset?<a class="headerlink" href="#what-is-a-dataset" title="Permalink to this headline">¶</a></h2>
 <p>A dataset in the COAT data portal is a parcel of data, organized as a
 <strong>collection of files</strong> which are all represented by the <strong>same set of metadata</strong>.</p>
@@ -67,8 +67,8 @@ you should consider splitting them into several collections (i.e.several data se
 and all search capabilities are on the metadata level of the data sets (see further info below).</p>
 <p>A dataset could typically be X number of files containing measurements of the same variables in X number of years.
 Or Y number of files containing measurements of the same variables in Y number of localities.</p>
-</div>
-<div class="section" id="dataset-naming">
+</section>
+<section id="dataset-naming">
 <h2>Dataset naming<a class="headerlink" href="#dataset-naming" title="Permalink to this headline">¶</a></h2>
 <p>The name of a dataset should always
 start with a <strong>standardized prefix</strong> indicating which region (Svalbard, Varanger)
@@ -244,8 +244,8 @@ Varanger</p></td>
 </tbody>
 </table>
 <p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
-</div>
-<div class="section" id="file-naming">
+</section>
+<section id="file-naming">
 <h2>File naming<a class="headerlink" href="#file-naming" title="Permalink to this headline">¶</a></h2>
 <p>The naming of the files within a dataset should inform about their content.
 However, there are no fixed naming conventions, and it is up to each data owner
@@ -257,8 +257,8 @@ This should be named according to the data set name + ‘coordinates’.
 Example: for a dataset named ‘V_forest_treestructure’, the coordinate file should
 be named ‘V_forest_treestructure_coordinates.csv’.</p>
 <p>Special characters: avoid special characters (such as ‘()’,’#’,’&amp;’, ‘{}’, ‘:’, ‘;’, ‘*’) in all file names.</p>
-</div>
-<div class="section" id="coordinate-files">
+</section>
+<section id="coordinate-files">
 <h2>Coordinate files<a class="headerlink" href="#coordinate-files" title="Permalink to this headline">¶</a></h2>
 <p>All plot-based data sets must be accompanied by a file containing plot coordinates.
 The files have standard format to facilitate finding data from the same localities from the data portal.</p>
@@ -281,8 +281,8 @@ column in the data files (see section on Columns names in data files)</p>
 <p><strong>[e_utm33]</strong>: X coordinate of the plot in UTM zone 33 (WGS84 unless otherwise stated)</p>
 <p><strong>[n_utm33]</strong>: Y coordinate of the plot in UTM zone 33 (WGS84 unless otherwise stated)</p>
 <p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
-</div>
-<div class="section" id="column-names-in-data-files">
+</section>
+<section id="column-names-in-data-files">
 <h2>Column names in data files<a class="headerlink" href="#column-names-in-data-files" title="Permalink to this headline">¶</a></h2>
 <p>As a general rule-of-thumb simple tables in COAT should be formatted in a <strong>long format</strong>,
 rather than in a wide format. This makes it easier to combine and plot data in R and facilitates
@@ -304,8 +304,8 @@ the temporal sampling and the most commonly used value columns.</p>
 Box/COAT/Data Management/Datatypes/Simple tables/Generic format data tables/Simple tables column definitions.xlsx(internal users only).
 The file also contains information on which standard columns should be included in all datasets.</p>
 <p><strong>TODO: make an online open version of this complete list and definitions.</strong></p>
-</div>
-<div class="section" id="spelling-and-general-text-formatting-in-data-files">
+</section>
+<section id="spelling-and-general-text-formatting-in-data-files">
 <h2>Spelling and general text formatting in data files<a class="headerlink" href="#spelling-and-general-text-formatting-in-data-files" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Capital letters: used only for NA, not for any other purpose</p></li>
@@ -313,18 +313,18 @@ The file also contains information on which standard columns should be included 
 <li><p>Special characters: avoid special characters (such as ‘()’,’#’,’&amp;’, ‘{}’, ‘:’, ‘;’, ‘*’) in all text columns.</p></li>
 <li><p>Separating words in ‘notes’/’comments’ columns: use space, underscore or comma.</p></li>
 </ul>
-</div>
-<div class="section" id="missing-data-in-files">
+</section>
+<section id="missing-data-in-files">
 <h2>Missing data in files<a class="headerlink" href="#missing-data-in-files" title="Permalink to this headline">¶</a></h2>
 <p>Always indicate missing data, also in text columns, by <strong>NA</strong> (capital letters only).
 All observations that have no comments, should have value <strong>“NA”</strong> in the comment column.</p>
-</div>
-<div class="section" id="date-formats-in-data-files">
+</section>
+<section id="date-formats-in-data-files">
 <h2>Date formats in data files<a class="headerlink" href="#date-formats-in-data-files" title="Permalink to this headline">¶</a></h2>
 <p>Dates should always be given as <strong>YYYY-MM-DD</strong> for example <strong>2018-12-31</strong>.</p>
 <p><a class="reference internal" href="#formatting"><span class="std std-ref">go back to top of the page</span></a></p>
-</div>
-<div class="section" id="locality-names-in-data-files">
+</section>
+<section id="locality-names-in-data-files">
 <h2>Locality names in data files<a class="headerlink" href="#locality-names-in-data-files" title="Permalink to this headline">¶</a></h2>
 <p>All locality names in files should conform to the standard lists of locality names
 found in Box/COAT/Data Management/Taxonomy/Locality/Locality taxonomy COAT.xlsx (internal users only).
@@ -333,15 +333,15 @@ The list defines the spelling of all place names found at the top-four levels of
 <p>Note that the names confirm to the general rules of
 text formatting (no capital letters, no Scandinavian letters etc). Anyone in need of the proper spelling
 (for instance for plotting purposes) can consult the sheet “correct spelling” in the same file.</p>
-</div>
-<div class="section" id="species-names-in-data-files">
+</section>
+<section id="species-names-in-data-files">
 <h2>Species names in data files<a class="headerlink" href="#species-names-in-data-files" title="Permalink to this headline">¶</a></h2>
 <p>All species names and abbreviations should conform to the standard lists of species names
 found in Box/COAT/Data Management/Taxonomy (internal users only).
 The lists give Latin, English, and Norwegian names for species, genera and families that occur in the COAT data.
 The lists also define abbreviations to be used in COAT data files.</p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -408,7 +408,7 @@ The lists also define abbreviations to be used in COAT data files.</p>
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -430,7 +430,7 @@ The lists also define abbreviations to be used in COAT data files.</p>
       &copy;2020, Matteo De Stefano.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

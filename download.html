@@ -4,15 +4,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Data download &#8212; COAT Data Portal 0.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -33,18 +33,18 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="data-download">
+  <section id="data-download">
 <span id="download"></span><h1>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h1>
 <p>There are multiple options for downloading data from the COAT data portal, listed below.</p>
-<div class="section" id="bulk-download-from-the-portal-interface">
+<section id="bulk-download-from-the-portal-interface">
 <h2>Bulk download from the portal interface<a class="headerlink" href="#bulk-download-from-the-portal-interface" title="Permalink to this headline">¶</a></h2>
 <p>To bulk download all the data belonging to ta dataset, a user can click on the button just above the dataset name.
 This will create a zip package containing all data files, and spawn a download.</p>
 <img alt="_images/zip_download.png" src="_images/zip_download.png" />
 <p><strong>Warning:</strong> <em>at the moment, datasets containing many or heavy data files could result in an error during package creation.
 We suggest to choose the bulk download from the API using a script (see below)</em></p>
-</div>
-<div class="section" id="download-single-data-file">
+</section>
+<section id="download-single-data-file">
 <h2>Download single data file<a class="headerlink" href="#download-single-data-file" title="Permalink to this headline">¶</a></h2>
 <p>To download a single data file, click on the <strong>Explore</strong> button on the right of a data, and then download,
 from the dataset detailed view:</p>
@@ -53,13 +53,13 @@ from the dataset detailed view:</p>
 <img alt="_images/resource_download.png" src="_images/resource_download.png" />
 <p><strong>Warning:</strong> <em>After requesting a single dataset download, in case of a txt file, instead of triggering a file download the dataset could be visualised in the browser itself as a web page content:
 in such a case, just press the right mouse button, and choose to download the content as txt.</em></p>
-</div>
-<div class="section" id="download-using-the-api">
+</section>
+<section id="download-using-the-api">
 <h2>Download using the API<a class="headerlink" href="#download-using-the-api" title="Permalink to this headline">¶</a></h2>
 <p>It is possible to download bulk data (or specific choices) using scripts interfacing to the data portal’s APIs. See some examples here:</p>
 <p><a class="reference external" href="https://github.com/COATnor/data_management_scripts">github - data management scripts</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -117,7 +117,7 @@ in such a case, just press the right mouse button, and choose to download the co
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -139,7 +139,7 @@ in such a case, just press the right mouse button, and choose to download the co
       &copy;2020, Matteo De Stefano.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
