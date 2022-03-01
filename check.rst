@@ -10,7 +10,7 @@ This section provides a checklist for dataset uploading new datasets.
 For a full detailed description of the formatting rules please refer to the :ref:`data formatting section <formatting>`
 
 The data formatting rules are also included in the
-`COAT Data Management Plan <https://data.coat.no/dataset/coat-data-management-plan_v1/resource/cfc7651f-b8a6-48f9-aba8-665fdb0beed7>`_.
+`COAT Data Management Plan <https://data.coat.no/dataset/d854b87c-ce4d-49fe-9704-c72b9333506f/resource/45404559-6c00-4061-a93b-bfeca8e09187/download/coat-data-management-plan-v1.1.pdf>`_.
 
 1. Dataset requirements
 ^^^^^^^^^^^^^^^^^^^^^^^
