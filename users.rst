@@ -41,7 +41,7 @@ A regular user can be upgraded to member or editor of one or more modules.
 A regular user has no authorizations in the Data Portal,
 and can visualize the same things that a not-logged in user can:
 
-* See only the parts of public datasets that are not behind embargo
+* See public datasets and resources, even if under embargo
 * Can't see private datasets
 * Can't create new datasets
 
@@ -54,7 +54,6 @@ Members of a Module:
 
 * Can't create new datasets
 * Can see private datasets of a Module
-* Can see behind-embargo data of a Module
 
 Editors of a Module
 -------------------------------------------
